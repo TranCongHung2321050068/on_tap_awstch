@@ -6,44 +6,39 @@
     <title>Ôn Luyện Điện Toán Đám Mây & AWS</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #f4f6f9; color: #333; padding: 20px; }
-        .container { max-width: 700px; margin: 0 auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        h1 { text-align: center; color: #1a365d; margin-bottom: 20px; font-size: 24px; }
+        body { background-color: #f4f6f9; color: #333; padding: 15px; }
+        .container { max-width: 750px; margin: 0 auto; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #1a365d; margin-bottom: 20px; font-size: 22px; }
         .screen { display: none; }
         .active { display: block; }
         
-        /* Menu chọn đề */
         .grid-menu { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-top: 15px; }
-        .btn-exam { background: #3182ce; color: white; border: none; padding: 15px; border-radius: 8px; font-weight: bold; cursor: pointer; text-align: left; transition: 0.2s; }
+        .btn-exam { background: #3182ce; color: white; border: none; padding: 15px; border-radius: 8px; font-weight: bold; cursor: pointer; text-align: left; transition: 0.2s; font-size: 15px; }
         .btn-exam:hover { background: #2b6cb0; transform: translateY(-2px); }
 
-        /* Giao diện câu hỏi */
         .progress { font-weight: bold; color: #718096; margin-bottom: 10px; font-size: 14px; }
-        .question-title { font-size: 17px; font-weight: bold; color: #1a202c; margin-bottom: 15px; line-height: 1.5; white-space: pre-line; }
+        .question-title { font-size: 16px; font-weight: bold; color: #1a202c; margin-bottom: 15px; line-height: 1.5; white-space: pre-line; }
         .options { display: flex; flex-direction: column; gap: 10px; }
-        .option-btn { background: #edf2f7; border: 2px solid #cbd5e0; padding: 12px 15px; border-radius: 8px; font-size: 15px; text-align: left; cursor: pointer; transition: 0.2s; color: #2d3748; }
+        .option-btn { background: #edf2f7; border: 2px solid #cbd5e0; padding: 12px 15px; border-radius: 8px; font-size: 14px; text-align: left; cursor: pointer; transition: 0.2s; color: #2d3748; line-height: 1.4; }
         .option-btn:hover:not([disabled]) { background: #e2e8f0; }
         
-        /* Trạng thái Đúng/Sai */
         .option-btn.correct { background-color: #c6f6d5 !important; border-color: #38a169 !important; color: #22543d; font-weight: bold; }
         .option-btn.wrong { background-color: #fed7d7 !important; border-color: #e53e3e !important; color: #742a2a; }
-        .feedback { margin-top: 15px; padding: 12px; border-radius: 6px; font-weight: bold; display: none; }
+        .feedback { margin-top: 15px; padding: 12px; border-radius: 6px; font-weight: bold; display: none; font-size: 14px; }
         .feedback.correct { background: #e6fffa; color: #234e52; border-left: 4px solid #319795; }
         .feedback.wrong { background: #fff5f5; color: #9b2c2c; border-left: 4px solid #e53e3e; }
 
-        /* Điều hướng */
         .nav-btns { display: flex; justify-content: space-between; margin-top: 20px; }
-        .btn { background: #4a5568; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; }
+        .btn { background: #4a5568; color: white; border: none; padding: 10px 18px; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 14px; }
         .btn:hover { background: #2d3748; }
         .btn-primary { background: #3182ce; }
         .btn-primary:hover { background: #2b6cb0; }
 
-        /* Màn hình kết quả */
         .result-card { text-align: center; padding: 20px 0; }
-        .score { font-size: 32px; font-weight: bold; color: #2b6cb0; margin: 15px 0; }
+        .score { font-size: 36px; font-weight: bold; color: #2b6cb0; margin: 15px 0; }
         .stat-box { display: flex; justify-content: space-around; margin: 20px 0; background: #f7fafc; padding: 15px; border-radius: 8px; }
         .stat-item { text-align: center; }
-        .stat-num { font-size: 20px; font-weight: bold; }
+        .stat-num { font-size: 22px; font-weight: bold; }
         .stat-num.green { color: #38a169; }
         .stat-num.red { color: #e53e3e; }
     </style>
@@ -51,7 +46,6 @@
 <body>
 
 <div class="container">
-    <!-- MÀN HÌNH CHỌN ĐỀ -->
     <div id="screen-home" class="screen active">
         <h1>📚 ÔN THI ĐIỆN TOÁN ĐÁM MÂY</h1>
         <p style="text-align: center; color: #718096; margin-bottom: 15px;">Chọn bộ đề thi để bắt đầu luyện tập:</p>
@@ -61,12 +55,11 @@
             <button class="btn-exam" onclick="startExam(3)">📝 Đề 3: AWS Practitioner 3 (20 câu)</button>
             <button class="btn-exam" onclick="startExam(4)">📝 Đề 4: AWS Practitioner 4 (17 câu)</button>
             <button class="btn-exam" onclick="startExam(5)">📝 Đề 5: AWS Practitioner 5 (20 câu)</button>
-            <button class="btn-exam" onclick="startExam(6)">📝 Đề 6: Knowledge Check 10 Modules (100 câu)</button>
-            <button class="btn-exam" onclick="startExam(7)">📝 Đề 7: Điện Toán Đám Mây C171 (45 câu)</button>
+            <button class="btn-exam" onclick="startExam(6)">📝 Đề 6: Knowledge Check (100 câu)</button>
+            <button class="btn-exam" onclick="startExam(7)">📝 Đề 7: ĐTĐM C171 - HUMG (45 câu)</button>
         </div>
     </div>
 
-    <!-- MÀN HÌNH CÂU HỎI -->
     <div id="screen-quiz" class="screen">
         <div class="progress" id="quiz-progress">Câu hỏi 1/20</div>
         <div class="question-title" id="quiz-question"></div>
@@ -78,7 +71,6 @@
         </div>
     </div>
 
-    <!-- MÀN HÌNH KẾT QUẢ -->
     <div id="screen-result" class="screen">
         <div class="result-card">
             <h2>🎉 HOÀN THÀNH BÀI LUYỆN TẬP!</h2>
@@ -96,34 +88,11 @@
     </div>
 </div>
 
+<!-- NỐI FILE DATA -->
+<script src="data.js"></script>
 <script>
-// NƠI CHỨA CẤU TRÚC CÂU HỎI 7 ĐỀ THI
-const examsData = {
-    // Đề 1 -> 5 (AWS Practitioner)[cite: 1, 4, 7]
-    1: [
-        { q: "Phát biểu nào sau đây là một ưu điểm của mô hình PaaS?", options: ["PaaS giống on-premises nhất", "PaaS cung cấp mức kiểm soát cao nhất", "PaaS làm giảm nhu cầu triển khai ứng dụng", "PaaS giúp tránh được nhu cầu phải quản lý các hệ điều hành"], correct: [3] },
-        { q: "Điện toán đám mây cải thiện khả năng cấp phát tài nguyên như thế nào?", options: ["Có thể khóa ở cấp tài nguyên", "Có thể dự báo chi phí", "Trải qua đỉnh và đáy", "Có thể tự động tăng hoặc giảm quy mô tùy theo nhu cầu"], correct: [3] },
-        { q: "Phát biểu nào mô tả đúng về mô hình tính giá AWS?", options: ["Phải ký hợp đồng dài hạn", "Giảm giá theo khối lượng sử dụng có sẵn khi mức độ sử dụng tăng lên", "Đặt trước dung lượng không ảnh hưởng chi phí", "Truyền dữ liệu ra ngoài không bị tính phí"], correct: [1] }
-    ],
-    // Đề 6 (Knowledge Check 100 câu)[cite: 10]
-    6: [
-        { q: "1. AWS highly recommends provisioning your compute resources across Availability Zones.\n(AWS khuyến nghị phân bổ tài nguyên tính toán qua nhiều vùng khả dụng.)", options: ["all / tất cả", "single / một", "multiple / nhiều", "none / không"], correct: [2] },
-        { q: "8. Which of the following best describes a system that can withstand some measures of degradation, experiences minimal downtime, and requires minimal human intervention?\n(Điều nào sau đây mô tả tốt nhất một hệ thống có thể chịu đựng được một số mức độ suy giảm, ít thời gian ngừng hoạt động và yêu cầu can thiệp thủ công tối thiểu?)", options: ["Scalable / Có thể mở rộng", "Elastic / Đàn hồi", "Highly Available / Tính sẵn sàng cao", "Fault - tolerant / Chịu lỗi"], correct: [3] },
-        { q: "38. True or False? You own the network-connected hardware required for these services, and AWS provisions what you need.\n(Đúng hay sai? Bạn sở hữu phần cứng kết nối mạng, và AWS cung cấp những gì bạn cần.)", options: ["True / Đúng", "False / Sai"], correct: [1] },
-        { q: "70. Which of the following is a measure of your system's ability to provide functionality when desired by the user?\n(Điều nào sau đây là thước đo khả năng cung cấp chức năng của hệ thống khi người dùng mong muốn?)", options: ["Performance efficiency / Hiệu suất", "Reliability / Độ tin cậy", "Availability / Tính sẵn sàng", "Fault Tolerance / Khả năng chịu lỗi"], correct: [2] }
-    ],
-    // Đề 7 (Điện toán đám mây C171 - HUMG 45 câu)[cite: 12]
-    7: [
-        { q: "Câu 1: Khi sử dụng đám mây công cộng khách hàng phải trả những chi phí nào?", options: ["Chi phí cho các tài nguyên sử dụng", "Chi phí về quản lý phần mềm", "Chi phí về quản lý phần cứng", "Chi phí về bảo trì hệ thống"], correct: [0] },
-        { q: "Câu 2: Điện toán đám mây còn gọi là gì?", options: ["Điện toán máy chủ vật lý", "Điện toán máy chủ ảo", "Không có đáp án đúng", "Điện toán lưới"], correct: [1] },
-        { q: "Câu 3: Đâu không phải là mô hình dịch vụ của đám mây?", options: ["Software as a service", "System administration as a service", "Infrastructure as a service", "Platform as a service"], correct: [1] },
-        { q: "Câu 29: Công cụ lưu trữ trực tuyến OneDrive dành cho sinh viên HUMG cho phép sinh viên mới đăng ký có bao nhiêu khoảng trống?", options: ["5GB", "4TB", "500MB", "1GB"], correct: [1] }
-    ]
-};
-
 let currentQuestions = [];
 let currentQIndex = 0;
-let userAnswers = [];
 let wrongQuestions = [];
 
 function showScreen(screenId) {
@@ -136,9 +105,8 @@ function goHome() {
 }
 
 function startExam(examId) {
-    currentQuestions = examsData[examId] || examsData[1];
+    currentQuestions = examsData[examId] || [];
     currentQIndex = 0;
-    userAnswers = [];
     wrongQuestions = [];
     showScreen('screen-quiz');
     loadQuestion();
@@ -169,7 +137,6 @@ function checkAnswer(selectedIdx, selectedBtn) {
     const q = currentQuestions[currentQIndex];
     const buttons = document.querySelectorAll('.option-btn');
     
-    // Khóa tất cả nút bấm
     buttons.forEach(b => b.disabled = true);
     
     const isCorrect = q.correct.includes(selectedIdx);
@@ -179,11 +146,9 @@ function checkAnswer(selectedIdx, selectedBtn) {
         showFeedback(true, "✅ Chính xác!");
     } else {
         selectedBtn.classList.add('wrong');
-        // Hiện đáp án đúng
         q.correct.forEach(cIdx => buttons[cIdx].classList.add('correct'));
         showFeedback(false, `❌ Chưa chính xác. Đáp án đúng là: ${q.correct.map(c => String.fromCharCode(65 + c)).join(', ')}`);
         
-        // Lưu vào danh sách câu sai
         if (!wrongQuestions.includes(q)) {
             wrongQuestions.push(q);
         }
