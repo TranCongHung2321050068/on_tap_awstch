@@ -24,22 +24,32 @@
         .badge-done { background: #c6f6d5; color: #22543d; }
         .badge-doing { background: #feebc8; color: #742a2a; }
 
-        /* Modal lựa chọn làm tiếp/làm lại */
+        /* Modal lựa chọn mở đề dở */
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; align-items: center; justify-content: center; padding: 20px; }
         .modal-overlay.active { display: flex; }
         .modal-box { background: white; padding: 25px; border-radius: 12px; max-width: 450px; width: 100%; text-align: center; }
         .modal-title { font-weight: bold; font-size: 18px; margin-bottom: 10px; color: #1a365d; }
         .modal-btns { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
 
-        /* Giao diện câu hỏi */
+        /* Giao diện làm bài */
         .progress-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-weight: bold; color: #718096; font-size: 14px; }
+        
+        /* BẢNG SỐ THỨ TỰ CÂU HỎI */
+        .q-palette-container { margin-bottom: 15px; background: #f7fafc; padding: 10px; border-radius: 8px; border: 1px solid #e2e8f0; }
+        .q-palette-title { font-size: 12px; font-weight: bold; color: #718096; margin-bottom: 8px; text-transform: uppercase; }
+        .q-palette { display: flex; flex-wrap: wrap; gap: 6px; max-height: 120px; overflow-y: auto; padding: 2px; }
+        .q-num-btn { width: 34px; height: 34px; border: 1px solid #cbd5e0; background: white; border-radius: 6px; font-size: 13px; font-weight: bold; color: #4a5568; cursor: pointer; transition: 0.15s; display: flex; align-items: center; justify-content: center; }
+        .q-num-btn:hover { border-color: #3182ce; background: #ebf8ff; }
+        .q-num-btn.active-q { border: 2px solid #3182ce !important; box-shadow: 0 0 0 2px rgba(49,130,206,0.3); font-weight: 900; }
+        .q-num-btn.status-correct { background-color: #38a169; color: white; border-color: #2f855a; }
+        .q-num-btn.status-wrong { background-color: #e53e3e; color: white; border-color: #c53030; }
+
         .question-title { font-size: 16px; font-weight: bold; color: #1a202c; margin-bottom: 15px; line-height: 1.5; white-space: pre-line; }
         .options { display: flex; flex-direction: column; gap: 10px; }
         .option-btn { background: #edf2f7; border: 2px solid #cbd5e0; padding: 12px 15px; border-radius: 8px; font-size: 14px; text-align: left; cursor: pointer; transition: 0.2s; color: #2d3748; line-height: 1.4; display: flex; align-items: center; gap: 10px; }
         .option-btn:hover:not([disabled]) { background: #e2e8f0; }
         .option-btn.selected { border-color: #3182ce; background-color: #ebf8ff; font-weight: bold; }
         
-        /* Trạng thái Đúng/Sai */
         .option-btn.correct { background-color: #c6f6d5 !important; border-color: #38a169 !important; color: #22543d; font-weight: bold; }
         .option-btn.wrong { background-color: #fed7d7 !important; border-color: #e53e3e !important; color: #742a2a; }
         .feedback { margin-top: 15px; padding: 12px; border-radius: 6px; font-weight: bold; display: none; font-size: 14px; }
@@ -83,6 +93,12 @@
             <span id="quiz-progress">Câu hỏi 1/20</span>
             <span id="quiz-score-live" style="color: #3182ce;">Đúng: 0 | Sai: 0</span>
         </div>
+
+        <div class="q-palette-container">
+            <div class="q-palette-title" id="palette-title-text">Danh sách câu hỏi:</div>
+            <div class="q-palette" id="q-palette"></div>
+        </div>
+
         <div class="question-title" id="quiz-question"></div>
         <div class="options" id="quiz-options"></div>
         
@@ -137,11 +153,10 @@
 let activeExamId = null;
 let currentQuestions = [];
 let currentQIndex = 0;
-let userHistory = {}; // { qIndex: { isCorrect: bool, selected: [] } }
+let userHistory = {}; 
 let isReviewingWrongOnly = false;
-let wrongOnlyList = [];
+let selectedMultiIndices = [];
 
-// Khởi tạo menu chính
 function initMenu() {
     const list = document.getElementById('exam-menu-list');
     list.innerHTML = '';
@@ -186,7 +201,6 @@ function initMenu() {
     });
 }
 
-// Lưu tiến độ vào LocalStorage
 function saveProgress() {
     if (!activeExamId) return;
     const key = `exam_progress_${activeExamId}`;
@@ -197,26 +211,22 @@ function saveProgress() {
     localStorage.setItem(key, JSON.stringify(data));
 }
 
-// Lấy tiến độ đã lưu
 function getSavedProgress(examId) {
     const key = `exam_progress_${examId}`;
     const data = localStorage.getItem(key);
     return data ? JSON.parse(data) : null;
 }
 
-// Xóa tiến độ
 function clearProgress(examId) {
     localStorage.removeItem(`exam_progress_${examId}`);
 }
 
-// Chọn đề từ Menu
 function onSelectExam(examId) {
     activeExamId = examId;
     const saved = getSavedProgress(examId);
     const total = examsData[examId].length;
 
     if (saved && Object.keys(saved.history).length > 0) {
-        // Hiện Modal lựa chọn
         const doneCount = Object.keys(saved.history).length;
         const wrongCount = Object.values(saved.history).filter(h => !h.isCorrect).length;
 
@@ -239,7 +249,6 @@ function closeModal() {
     document.getElementById('resume-modal').classList.remove('active');
 }
 
-// Xử lý các lựa chọn từ Modal
 function resumeExam(type) {
     closeModal();
     if (type === 'reset') {
@@ -252,7 +261,6 @@ function resumeExam(type) {
     }
 }
 
-// Bắt đầu thi
 function startExam(examId, mode) {
     activeExamId = examId;
     isReviewingWrongOnly = false;
@@ -265,7 +273,6 @@ function startExam(examId, mode) {
         const saved = getSavedProgress(examId);
         userHistory = saved ? saved.history : {};
         currentQuestions = [...examsData[examId]];
-        // Tìm câu đầu tiên chưa làm
         let nextUndone = currentQuestions.findIndex((_, idx) => !userHistory[idx]);
         currentQIndex = nextUndone !== -1 ? nextUndone : 0;
     } else if (mode === 'review_wrong') {
@@ -273,9 +280,8 @@ function startExam(examId, mode) {
         const saved = getSavedProgress(examId);
         userHistory = saved ? saved.history : {};
         
-        // Lọc danh sách câu sai
-        wrongOnlyList = examsData[examId].filter((_, idx) => userHistory[idx] && !userHistory[idx].isCorrect);
-        currentQuestions = wrongOnlyList;
+        // Lọc danh sách câu hỏi đang sai
+        currentQuestions = examsData[examId].filter((_, idx) => userHistory[idx] && !userHistory[idx].isCorrect);
         currentQIndex = 0;
     }
 
@@ -305,17 +311,52 @@ function resetCurrentExamAndStart() {
     startExam(activeExamId, 'new');
 }
 
+function renderQuestionPalette() {
+    const palette = document.getElementById('q-palette');
+    palette.innerHTML = '';
+
+    document.getElementById('palette-title-text').innerText = isReviewingWrongOnly ? "Danh sách câu sai đang ôn:" : "Danh sách câu hỏi:";
+
+    currentQuestions.forEach((q, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'q-num-btn';
+        
+        const origIdx = examsData[activeExamId].indexOf(q);
+        btn.innerText = isReviewingWrongOnly ? `C${origIdx + 1}` : idx + 1;
+
+        const ans = userHistory[origIdx];
+
+        if (ans) {
+            if (ans.isCorrect) btn.classList.add('status-correct');
+            else btn.classList.add('status-wrong');
+        }
+
+        if (idx === currentQIndex) {
+            btn.classList.add('active-q');
+        }
+
+        btn.onclick = () => jumpToQuestion(idx);
+        palette.appendChild(btn);
+    });
+}
+
+function jumpToQuestion(targetIndex) {
+    currentQIndex = targetIndex;
+    loadQuestion();
+}
+
 function loadQuestion() {
     const q = currentQuestions[currentQIndex];
     const total = currentQuestions.length;
     
     document.getElementById('quiz-progress').innerText = `Câu hỏi ${currentQIndex + 1}/${total}`;
     
-    // Cập nhật tỉ lệ Đúng/Sai thời gian thực
     const historyVals = Object.values(userHistory);
     const correctCount = historyVals.filter(h => h.isCorrect).length;
     const wrongCount = historyVals.filter(h => !h.isCorrect).length;
     document.getElementById('quiz-score-live').innerText = `Đúng: ${correctCount} | Sai: ${wrongCount}`;
+
+    renderQuestionPalette();
 
     document.getElementById('quiz-question').innerText = q.q;
     
@@ -334,7 +375,6 @@ function loadQuestion() {
     const btnSubmit = document.getElementById('btn-submit-multi');
     if (btnSubmit) btnSubmit.disabled = true;
 
-    // Kiểm tra xem câu này trong lịch sử gốc đã làm chưa
     const originalIndex = examsData[activeExamId].indexOf(q);
     const pastAns = userHistory[originalIndex];
 
@@ -352,13 +392,12 @@ function loadQuestion() {
         optionsContainer.appendChild(btn);
     });
 
-    // Nếu câu này đã làm trước đó, hiển thị lại kết quả luôn
+    // Nếu không phải đang ôn câu sai, hiển thị kết quả cũ nếu có
     if (pastAns && !isReviewingWrongOnly) {
         renderPastAnswer(q, pastAns);
     }
 }
 
-// Hiển thị lại câu hỏi đã trả lời trước đó
 function renderPastAnswer(q, pastAns) {
     const buttons = document.querySelectorAll('.option-btn');
     buttons.forEach(b => b.disabled = true);
@@ -384,19 +423,20 @@ function checkSingleAnswer(selectedIdx, selectedBtn) {
     const isCorrect = q.correct.includes(selectedIdx);
     const originalIndex = examsData[activeExamId].indexOf(q);
 
-    // Lưu vào lịch sử
+    // Cập nhật kết quả mới nhất vào lịch sử
     userHistory[originalIndex] = { isCorrect, selected: [selectedIdx] };
-    if (!isReviewingWrongOnly) saveProgress();
+    saveProgress(); // Luôn lưu lại tiến độ mới nhất
 
     if (isCorrect) {
         selectedBtn.classList.add('correct');
-        showFeedback(true, "✅ Chính xác!");
+        showFeedback(true, isReviewingWrongOnly ? "🎉 Xuất sắc! Bạn đã sửa ĐÚNG câu này (Đã chuyển sang nhóm ĐÚNG)." : "✅ Chính xác!");
     } else {
         selectedBtn.classList.add('wrong');
         q.correct.forEach(cIdx => buttons[cIdx].classList.add('correct'));
         showFeedback(false, `❌ Chưa chính xác. Đáp án đúng là: ${q.correct.map(c => String.fromCharCode(65 + c)).join(', ')}`);
     }
 
+    renderQuestionPalette();
     document.getElementById('btn-next').style.display = 'inline-block';
 }
 
@@ -429,8 +469,10 @@ function submitMultiAnswer() {
                       q.correct.every(val => selectedMultiIndices.includes(val));
     
     const originalIndex = examsData[activeExamId].indexOf(q);
+    
+    // Cập nhật kết quả mới nhất vào lịch sử
     userHistory[originalIndex] = { isCorrect, selected: [...selectedMultiIndices] };
-    if (!isReviewingWrongOnly) saveProgress();
+    saveProgress();
 
     buttons.forEach((btn, idx) => {
         const isSelected = selectedMultiIndices.includes(idx);
@@ -444,11 +486,12 @@ function submitMultiAnswer() {
     });
 
     if (isCorrect) {
-        showFeedback(true, "✅ Chính xác!");
+        showFeedback(true, isReviewingWrongOnly ? "🎉 Xuất sắc! Bạn đã sửa ĐÚNG câu này (Đã chuyển sang nhóm ĐÚNG)." : "✅ Chính xác!");
     } else {
         showFeedback(false, `❌ Chưa chính xác. Đáp án đúng là: ${q.correct.map(c => String.fromCharCode(65 + c)).join(', ')}`);
     }
 
+    renderQuestionPalette();
     document.getElementById('action-area').style.display = 'none';
     document.getElementById('btn-next').style.display = 'inline-block';
 }
@@ -471,27 +514,15 @@ function nextQuestion() {
 
 function finishExam() {
     showScreen('screen-result');
-    const total = currentQuestions.length;
     
-    let correct = 0;
-    let wrong = 0;
-
-    if (isReviewingWrongOnly) {
-        wrongOnlyList.forEach(q => {
-            const origIdx = examsData[activeExamId].indexOf(q);
-            if (userHistory[origIdx] && userHistory[origIdx].isCorrect) correct++;
-            else wrong++;
-        });
-    } else {
-        const historyVals = Object.values(userHistory);
-        correct = historyVals.filter(h => h.isCorrect).length;
-        wrong = historyVals.filter(h => !h.isCorrect).length;
-    }
-
-    const percent = Math.round((correct / total) * 100);
+    const totalOriginal = examsData[activeExamId].length;
+    const historyVals = Object.values(userHistory);
+    const correct = historyVals.filter(h => h.isCorrect).length;
+    const wrong = historyVals.filter(h => !h.isCorrect).length;
+    const percent = Math.round((correct / totalOriginal) * 100);
 
     document.getElementById('result-score').innerText = `${percent}%`;
-    document.getElementById('stat-total').innerText = total;
+    document.getElementById('stat-total').innerText = totalOriginal;
     document.getElementById('stat-correct').innerText = correct;
     document.getElementById('stat-wrong').innerText = wrong;
 
@@ -503,7 +534,6 @@ function reviewWrongQuestions() {
     startExam(activeExamId, 'review_wrong');
 }
 
-// Chạy khởi tạo menu khi tải trang
 window.onload = initMenu;
 </script>
 </body>
