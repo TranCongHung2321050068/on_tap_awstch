@@ -2259,7 +2259,7 @@ const examsData = {
             ],
             correct: [0]
         }
-    ]
+    ],
     // ĐỀ 8: AWS PRACTITIONER 8 (20 CÂU)
     8: [
         {
