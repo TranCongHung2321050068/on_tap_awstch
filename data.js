@@ -3527,5 +3527,594 @@ const examsData = {
       ],
       correct: [1]
     }
-  ]
+  ],
+  13: [
+    {
+      q: "Câu hỏi 1: Yêu cầu CNTT nào sẽ khiến kiến trúc sư chọn mô hình dịch vụ đám mây Hạ tầng như một dịch vụ (IaaS)?",
+      options: [
+        "Một công ty muốn vận hành một thể hiện được quản lý cho thị trường.",
+        "Một công ty muốn sử dụng giải pháp thư điện tử dựa trên web.",
+        "Một công ty muốn duy trì mức độ linh hoạt cao nhất đối với các tài nguyên CNTT của mình.",
+        "Một công ty muốn duy trì quyền kiểm soát các ứng dụng của mình nhưng tránh việc bảo trì máy chủ và hệ điều hành."
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 2: Điện toán đám mây cải thiện khả năng cấp phát tài nguyên của doanh nghiệp nhằm đáp ứng nhu cầu năng lực như thế nào so với điện toán tại chỗ (on-premises)?",
+      options: [
+        "Tài nguyên đám mây có thể dự báo được chi phí.",
+        "Tài nguyên đám mây có thể được khóa ở cấp độ tài nguyên.",
+        "Tài nguyên đám mây có thể tự động tăng hoặc giảm quy mô tùy theo nhu cầu.",
+        "Tài nguyên đám mây có thể trải qua các đỉnh và đáy trong quá trình sử dụng."
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 3: Những phát biểu nào về cách một công ty sẽ sử dụng AWS Organizations là chính xác? (Chọn HAI)",
+      options: [
+        "Một công ty có thể sử dụng AWS Organizations để tạo các nhóm bảo mật (security groups) kiểm soát truy cập vào tài nguyên.",
+        "Một công ty có thể hợp nhất và quản lý tập trung nhiều tài khoản AWS.",
+        "Một công ty có thể sử dụng tính năng quản lý danh tính và truy cập hợp nhất (IAM) của AWS Organizations để thay thế hệ thống IAM hiện có cho một tài khoản riêng lẻ.",
+        "Một công ty có thể hưởng lợi từ việc giảm giá theo số lượng với tính năng thanh toán hợp nhất (consolidated billing).",
+        "Một công ty chỉ có thể quản lý AWS Organizations thông qua AWS Management Console."
+      ],
+      correct: [1, 3]
+    },
+    {
+      q: "Câu hỏi 4: Yếu tố nào được xem xét khi tính tổng chi phí sở hữu (TCO) cho AWS Cloud? (Chọn HAI)",
+      options: [
+        "Số lượng người dùng cần di chuyển lên đám mây.",
+        "Số lượng nhóm cần di chuyển lên đám mây.",
+        "Số lượng máy chủ cần di chuyển lên đám mây.",
+        "Số lượng vai trò (roles) cần di chuyển lên đám mây.",
+        "Dung lượng lưu trữ cần di chuyển lên đám mây."
+      ],
+      correct: [2, 4]
+    },
+    {
+      q: "Câu hỏi 5: Phát biểu nào về AWS Regions là đúng?",
+      options: [
+        "Tất cả tài khoản AWS đều có thể truy cập tất cả AWS Regions.",
+        "Sử dụng một Region càng gần người dùng càng tốt có thể giảm độ trễ (latency).",
+        "Dữ liệu được lưu trữ trong một AWS Region không phải tuân theo các yêu cầu tuân thủ địa lý.",
+        "Tất cả các Region có sẵn đều được bật theo mặc định trong một tài khoản AWS."
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 6: Những phát biểu nào về các chính sách AWS Identity and Access Management (IAM) là chính xác? (Chọn HAI)",
+      options: [
+        "Chính sách dựa trên tài nguyên (resource-based policies) cho phép truy cập theo mặc định.",
+        "Chính sách dựa trên danh tính (identity-based policies) chỉ có thể được gắn vào một thực thể duy nhất.",
+        "Chính sách dựa trên danh tính được gắn vào một người dùng (user), nhóm (group), hoặc vai trò (role).",
+        "Chính sách dựa trên tài nguyên được gắn vào một người dùng, nhóm, hoặc vai trò.",
+        "Danh sách kiểm soát truy cập (ACLs) là một dạng của chính sách dựa trên tài nguyên."
+      ],
+      correct: [2, 4]
+    },
+    {
+      q: "Câu hỏi 7: Kịch bản nào mô tả một trường hợp sử dụng cho AWS CloudTrail?",
+      options: [
+        "Quản trị viên tài khoản muốn kiểm soát tập trung quyền truy cập cho các nhóm tài khoản.",
+        "Quản trị viên hệ thống muốn bảo vệ ứng dụng web của họ khỏi các cuộc tấn công từ chối dịch vụ (DDoS).",
+        "Quản trị viên tài khoản muốn có khả năng theo dõi hoạt động của người dùng trên tài khoản của họ.",
+        "Nhà phát triển muốn kiểm soát việc đăng nhập của người dùng vào trang web của họ."
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 8: Quản trị viên mạng muốn cấu hình một subnet công khai và định tuyến lưu lượng truy cập vào/ra đến và từ một thể hiện Amazon EC2 trong subnet công khai đó ra internet công khai. Họ nên sử dụng tính năng nào của Virtual Private Cloud (VPC)?",
+      options: [
+        "Network access control list (ACL)",
+        "VPC sharing",
+        "An internet gateway",
+        "A network address translation (NAT) gateway"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 9: Yêu cầu nào gợi ý việc cấu hình Amazon Route 53 với định tuyến theo độ trễ (latency routing)?",
+      options: [
+        "Một công ty muốn phát hiện tình trạng gián đoạn trang web và tự động chuyển hướng khách hàng đến một vị trí hoạt động tốt.",
+        "Một công ty muốn định tuyến lưu lượng truy cập đến Region cung cấp trải nghiệm nhanh nhất dựa trên đo lường hiệu năng.",
+        "Một công ty muốn định tuyến lưu lượng truy cập chỉ đến các vị trí mà họ có quyền phân phối.",
+        "Một công ty muốn thực hiện thử nghiệm A/B và định tuyến lưu lượng truy cập đến các vị trí khác nhau dựa trên phần trăm lưu lượng."
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 10: Một công ty muốn kiểm soát hoàn toàn các cấu hình máy chủ, hệ điều hành (OS) và bộ phần mềm ứng dụng của mình. Họ nên chọn dịch vụ điện toán AWS nào?",
+      options: [
+        "Amazon Elastic Container Service (Amazon ECS)",
+        "Amazon EC2",
+        "AWS Lambda",
+        "Amazon RDS"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 11: Nhà phát triển cần bộ lưu trữ khối tạm thời (temporary block storage) cho dữ liệu bộ nhớ đệm (cache) trên thể hiện Amazon EC2. Họ nên chọn tùy chọn nào?",
+      options: [
+        "Amazon Elastic Block Store (Amazon EBS)",
+        "Amazon S3",
+        "Amazon EC2 instance store",
+        "Amazon Elastic File System (Amazon EFS)"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 12: Kịch bản nào là trường hợp sử dụng phù hợp cho bộ lưu trữ Amazon Elastic File System (Amazon EFS)?",
+      options: [
+        "Một công ty muốn lưu trữ một trang web.",
+        "Một công ty cần cấp cho tất cả các thể hiện Amazon EC2 trong Virtual Private Cloud (VPC) của mình quyền truy cập đọc và ghi vào một hệ thống tệp mạng (NFS).",
+        "Một công ty cần lưu trữ tệp tạm thời cho ứng dụng đang chạy trên Amazon EC2.",
+        "Một công ty muốn xây dựng một hồ dữ liệu (data lake) quy mô petabyte cho phân tích."
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 13: Một công ty cần lưu trữ dữ liệu tồn tại lâu dài. Họ cần dữ liệu có sẵn ngay lập tức, nhưng mô hình truy cập là không thể dự đoán. Loại lưu trữ Amazon S3 (storage class) nào sẽ tiết kiệm chi phí nhất?",
+      options: [
+        "Amazon S3 One Zone-Infrequent Access",
+        "Amazon S3 Standard",
+        "Amazon S3 Intelligent-Tiering",
+        "Amazon S3 Glacier"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 14: Kịch bản nào mô tả một trường hợp sử dụng tốt cho bộ lưu trữ Amazon S3 Standard?",
+      options: [
+        "Đóng vai trò là EC2 instance store.",
+        "Lưu trữ hình ảnh cho trang web.",
+        "Chạy cơ sở dữ liệu quan hệ.",
+        "Chia sẻ một hệ thống tệp NFS."
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 15: Tùy chọn nào là trách nhiệm của công ty khi vận hành Amazon RDS?",
+      options: [
+        "Tối ưu hóa ứng dụng.",
+        "Vá lỗi phần mềm cơ sở dữ liệu.",
+        "Cài đặt hệ điều hành.",
+        "Vá lỗi hệ điều hành."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 16: Kịch bản nào phù hợp với Amazon Redshift?",
+      options: [
+        "Một công ty cần lưu trữ số lượng lớn các tệp hình ảnh và video đa phương tiện hỗn hợp.",
+        "Một công ty cần cơ sở dữ liệu quan hệ cho cơ sở dữ liệu giao dịch nghiệp vụ.",
+        "Một công ty cần kho dữ liệu (data warehouse) để hỗ trợ các ứng dụng phân tích.",
+        "Một công ty cần cơ sở dữ liệu để quản lý dữ liệu phi cấu trúc."
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 17: Phát biểu nào phản ánh nguyên tắc thiết kế thuộc trụ cột Độ tin cậy (Reliability pillar) của AWS Well-Architected Framework?",
+      options: [
+        "Thay thế một tài nguyên lớn bằng nhiều tài nguyên nhỏ hơn và phân phối các yêu cầu trên các tài nguyên nhỏ hơn này.",
+        "Mở rộng theo chiều dọc (scale vertically) lên loại thể hiện lớn nhất mà ngân sách của bạn cho phép dựa trên ước tính dung lượng.",
+        "Hạn chế tự động hóa khi cập nhật hạ tầng.",
+        "Không triển khai mã lên môi trường sản xuất cho đến khi bạn chắc chắn rằng nó không thể thất bại."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 18: Phát biểu nào mô tả tính sẵn sàng cao (high availability)?",
+      options: [
+        "Một hệ thống có thể chịu đựng một mức độ suy giảm nhất định mà không bị ngừng hoạt động.",
+        "Đó là thước đo tổng thời gian phục vụ chia cho số lần thất bại.",
+        "Một hệ thống có thể cung cấp chức năng dự kiến khi người dùng yêu cầu.",
+        "Đó là xác suất toàn bộ hệ thống của bạn sẽ hoạt động như dự kiến trong một khoảng thời gian xác định."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 19: Thông tin nào BẮT BUỘC phải được cấu hình cho các thể hiện Amazon EC2 sẽ là một phần của nhóm Amazon EC2 Auto Scaling? (Chọn HAI)",
+      options: [
+        "Loại thể hiện Amazon EC2 (Amazon EC2 instance type)",
+        "Network access control list (ACL)",
+        "ID của một Amazon Machine Image (AMI)",
+        "Các chỉ số nhóm Amazon EC2 Auto Scaling",
+        "Dung lượng lưu trữ (Storage volume)"
+      ],
+      correct: [0, 2]
+    },
+    {
+      q: "Câu hỏi 20: Phát biểu nào mô tả chính xác cách sử dụng Amazon EC2 Auto Scaling?",
+      options: [
+        "Amazon EC2 Auto Scaling hữu ích cho khối lượng công việc động, không thể dự đoán nhưng không mang lại nhiều giá trị cho khối lượng công việc có thể dự đoán được.",
+        "Amazon EC2 Auto Scaling cho phép ứng dụng tự động thêm tài nguyên, nhưng không thể tự động thu hẹp lại.",
+        "Kích thước của nhóm Amazon EC2 Auto Scaling sẽ tự động tăng và giảm dựa trên cấu hình của nó và số lượng thể hiện không thể điều chỉnh thủ công.",
+        "Amazon EC2 Auto Scaling hữu ích cho khối lượng công việc có thể dự đoán được."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 21: Yêu cầu CNTT nào sẽ khiến kiến trúc sư chọn mô hình dịch vụ đám mây Hạ tầng như một dịch vụ (IaaS)?",
+      options: [
+        "Một công ty muốn vận hành một thể hiện được quản lý cho thị trường.",
+        "Một công ty muốn sử dụng giải pháp thư điện tử dựa trên web.",
+        "Một công ty muốn duy trì mức độ linh hoạt cao nhất đối với các tài nguyên CNTT của mình.",
+        "Một công ty muốn duy trì quyền kiểm soát các ứng dụng của mình nhưng tránh việc bảo trì máy chủ và hệ điều hành."
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 22: Lợi ích kinh tế nhờ quy mô (economies of scale) giúp ích gì cho khách hàng chuyển từ điện toán tại chỗ (on-premises) sang điện toán đám mây?",
+      options: [
+        "Khách hàng có toàn quyền kiểm soát hạ tầng của họ.",
+        "Khách hàng có thể mở rộng máy chủ theo chiều ngang (horizontally).",
+        "Khách hàng có thể đạt được chi phí biến đổi thấp hơn và mở rộng hạ tầng vượt xa những gì có thể thực hiện tại chỗ.",
+        "Khách hàng có thể triển khai tài nguyên trên toàn cầu."
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 23: Phát biểu nào mô tả chính xác cách khách hàng có thể sử dụng AWS Support?",
+      options: [
+        "Khách hàng phải chọn một trong ba gói hỗ trợ: Basic Support, Business Support, và Enterprise Support.",
+        "Khách hàng nên liên hệ với Support Concierge của họ để cung cấp hỗ trợ kỹ thuật nhanh chóng và hiệu quả.",
+        "Khách hàng được chỉ định một Quản lý tài khoản kỹ thuật (TAM) cho tất cả các gói AWS Support.",
+        "Khách hàng có thể nhận AWS Support cho cả tài khoản thử nghiệm không dùng cho sản xuất và cho các tài khoản sản xuất quan trọng đối với doanh nghiệp."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 24: Phát biểu nào về AWS Regions là đúng?",
+      options: [
+        "Dữ liệu lưu trữ trong một AWS Region không phải tuân theo các yêu cầu tuân thủ địa lý.",
+        "Tất cả các Region có sẵn đều được bật theo mặc định trong một tài khoản AWS.",
+        "Tất cả tài khoản AWS đều có thể truy cập tất cả AWS Regions.",
+        "Sử dụng một Region càng gần người dùng càng tốt có thể giảm độ trễ (latency)."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 25: Những phát biểu nào về các chính sách AWS Identity and Access Management (IAM) là chính xác? (Chọn HAI)",
+      options: [
+        "Chính sách dựa trên danh tính chỉ có thể gắn vào một thực thể duy nhất.",
+        "Chính sách dựa trên tài nguyên cho phép truy cập theo mặc định.",
+        "Danh sách kiểm soát truy cập (ACLs) là một dạng của chính sách dựa trên tài nguyên.",
+        "Chính sách dựa trên danh tính được gắn vào một người dùng, nhóm, hoặc vai trò.",
+        "Chính sách dựa trên tài nguyên được gắn vào một người dùng, nhóm, hoặc vai trò."
+      ],
+      correct: [2, 3]
+    },
+    {
+      q: "Câu hỏi 26: Những phát biểu nào về việc bảo mật dữ liệu đang truyền tải (data in transit) là đúng? (Chọn HAI)",
+      options: [
+        "TLS là một giao thức độc quyền được sử dụng để bảo mật lưu lượng truy cập giữa các AWS virtual private clouds (VPCs).",
+        "Dữ liệu di chuyển giữa các dịch vụ AWS được mã hóa bằng TLS và AWS Key Management Service (AWS KMS).",
+        "Chứng chỉ TLS có thể được quản lý bằng AWS Certificate Manager (ACM).",
+        "Lưu lượng web chạy qua HTTP được mã hóa bằng TLS.",
+        "TLS cung cấp khả năng mã hóa dữ liệu đang truyền tải."
+      ],
+      correct: [3, 4]
+    },
+    {
+      q: "Câu hỏi 27: Tùy chọn nào mô tả một khả năng của Amazon Virtual Private Clouds (VPCs)?",
+      options: [
+        "Chúng có thể trải rộng qua nhiều Khu vực sẵn sàng (Availability Zones).",
+        "Chúng có thể thay đổi dải địa chỉ theo ý muốn sau khi tạo.",
+        "Chúng có thể được cấu hình như một phần độc lập về mặt vật lý của AWS Cloud.",
+        "Chúng có thể thuộc về nhiều AWS Regions."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 28: Cấu hình nào đại diện cho một cách sử dụng hợp lệ các Nhóm bảo mật (Security Groups) trong Virtual Private Cloud (VPC)?",
+      options: [
+        "Giới hạn truy cập đầu vào (inbound) tới subnet riêng tư của VPC.",
+        "Thiết lập quy tắc từ chối (deny rule) ngăn lưu lượng truy cập đầu ra từ một thể hiện Amazon EC2 trong VPC.",
+        "Giới hạn lưu lượng truy cập đầu ra từ một thể hiện Amazon EC2 trong VPC tới một máy chủ cơ sở dữ liệu cụ thể.",
+        "Thiết lập quy tắc từ chối ngăn truy cập vào subnet từ internet công khai."
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 29: Một nhà phát triển đang thử nghiệm một bản mẫu trên Amazon EC2. Các thể hiện bị hủy sau khi thử nghiệm, nhưng ứng dụng yêu cầu điện toán không bị gián đoạn trong khi xử lý. Loại định giá thể hiện Amazon EC2 nào đáp ứng nhu cầu với chi phí thấp nhất?",
+      options: [
+        "Reserved Instance",
+        "Scheduled Reserved Instance",
+        "Spot Instance",
+        "On-Demand Instance"
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 30: Nhóm bảo mật (Security Group) đóng vai trò gì trong việc quản lý truy cập vào các thể hiện Amazon EC2?",
+      options: [
+        "Nhóm bảo mật xác định các vai trò AWS Identity and Access Management (IAM) có thể truy cập thể hiện.",
+        "Nhóm bảo mật kiểm soát truy cập đầu vào tới subnet mà Amazon EC2 liên kết.",
+        "Nhóm bảo mật xác định khóa công khai và riêng tư cần thiết để kết nối với thể hiện Amazon EC2.",
+        "Nhóm bảo mật cung cấp một tập hợp các quy tắc để kiểm soát lưu lượng truy cập đến hoặc đi từ một thể hiện."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 31: Một nhà phát triển muốn sử dụng Amazon Elastic Block Store (Amazon EBS) cho ứng dụng của họ. Họ nên thực hiện hành động nào?",
+      options: [
+        "Sao chép (replicate) ổ lưu trữ Amazon EBS sang một Availability Zone khác.",
+        "Sao lưu ổ lưu trữ Amazon EBS bằng cách sử dụng Snapshots.",
+        "Gắn ổ lưu trữ Amazon EBS vào nhiều thể hiện Amazon EC2 ở nhiều Availability Zones.",
+        "Gắn ổ lưu trữ Amazon EBS vào một thể hiện Amazon EC2."
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 32: Một công ty tải các biểu mẫu PDF lên Amazon S3 và phải lưu trữ trong 1 năm. Các biểu mẫu hiếm khi được truy cập sau 1 tuần, nhưng phải có sẵn trong vòng 1 ngày khi được yêu cầu. Chính sách vòng đời nào tiết kiệm chi phí nhất cho nhu cầu của họ?",
+      options: [
+        "Chuyển đối tượng từ Amazon Standard-Infrequent Access sang Amazon S3 Standard sau 1 tuần.",
+        "Chuyển đối tượng từ Amazon S3 Standard sang Amazon S3 One Zone-Infrequent Access sau 7 ngày. Xóa các đối tượng sau 365 ngày.",
+        "Chuyển đối tượng từ Amazon S3 Standard sang Amazon S3 Standard-Infrequent Access sau 7 ngày.",
+        "Chuyển đối tượng từ Amazon S3 Standard sang Amazon S3 Glacier sau 7 ngày. Xóa chúng sau 365 ngày."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 33: Một công ty cần lưu trữ hàng tỷ sự kiện hàng ngày dung lượng nhỏ để sử dụng cho phân tích. Tùy chọn lưu trữ nào phù hợp nhất với trường hợp sử dụng này?",
+      options: [
+        "Amazon Elastic Block Store (Amazon EBS)",
+        "Amazon S3",
+        "Amazon Elastic Container Service (Amazon ECS)",
+        "Amazon EC2 instance store"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 34: Tùy chọn nào là trách nhiệm của công ty khi vận hành Amazon RDS?",
+      options: [
+        "Vá lỗi hệ điều hành.",
+        "Cài đặt hệ điều hành.",
+        "Tối ưu hóa ứng dụng.",
+        "Vá lỗi phần mềm cơ sở dữ liệu."
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 35: Kịch bản nào mô tả tốt nhất trường hợp sử dụng cho Amazon Aurora?",
+      options: [
+        "Một công ty muốn chạy cơ sở dữ liệu Oracle trên đám mây.",
+        "Một công ty cần một cơ sở dữ liệu tương thích với PostgreSQL có độ sẵn sàng cao.",
+        "Một công ty cần một kho dữ liệu (data warehouse) có thể truy vấn bằng các công cụ Business Intelligence tiêu chuẩn.",
+        "Một công ty cần cơ sở dữ liệu để lưu trữ dữ liệu bán cấu trúc (semistructured data)."
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 36: Phát biểu nào phản ánh nguyên tắc thiết kế thuộc trụ cột Bảo mật (Security pillar) của AWS Well-Architected Framework?",
+      options: [
+        "Đảm bảo rằng nhân viên chủ động giám sát các rủi ro tiềm ẩn một cách thủ công.",
+        "Không triển khai giải pháp lên môi trường sản xuất cho đến khi bạn chắc chắn rằng không có rủi ro bảo mật.",
+        "Phân tán quản lý quyền truy cập (decentralize permissions management).",
+        "Áp dụng bảo mật ở tất cả các tầng/lớp của một kiến trúc (apply security at all layers of an architecture)."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 37: Loại cảnh báo nào có thể được cung cấp bởi AWS Trusted Advisor?",
+      options: [
+        "Cảnh báo rằng xác thực nhiều yếu tố (MFA) chưa được kích hoạt trên một tài khoản AWS.",
+        "Cảnh báo về các cuộc gọi API bất thường được thực hiện trong tài khoản AWS.",
+        "Cảnh báo rằng người dùng AWS Identity and Access Management (IAM) đã yêu cầu thay đổi hạn mức dịch vụ (service quota).",
+        "Cảnh báo về truy cập trái phép trong tài khoản AWS."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 38: Kịch bản nào nên được giải quyết bằng Network Load Balancer?",
+      options: [
+        "Giải pháp phải cân bằng tải các yêu cầu gRPC đầu vào.",
+        "Giải pháp phải cân bằng tải hàng triệu yêu cầu mỗi giây trong khi vẫn duy trì độ trễ thấp.",
+        "Giải pháp phải định tuyến lưu lượng ở Tầng 7 của mô hình OSI (Open Systems Interconnection).",
+        "Giải pháp phải hỗ trợ định tuyến lưu lượng đến một ứng dụng container hóa dựa trên nội dung của các yêu cầu đầu vào."
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 39: Phát biểu nào về AWS Auto Scaling là đúng?",
+      options: [
+        "AWS Auto Scaling có thể được sử dụng để tự động mở rộng các bảng và chỉ mục của Amazon DynamoDB.",
+        "AWS Auto Scaling có thể được sử dụng để tự động mở rộng cơ sở dữ liệu Amazon RDS.",
+        "AWS Auto Scaling và Amazon EC2 Auto Scaling là đồng nghĩa với nhau.",
+        "Bạn có thể sử dụng Amazon EC2 Auto Scaling hoặc AWS Auto Scaling, nhưng không thể dùng cả hai."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 40: Những ưu điểm của điện toán đám mây đối với một công ty chuyển từ mô hình điện toán tại chỗ (on-premises) truyền thống là gì? (Chọn HAI)",
+      options: [
+        "Các đội ngũ CNTT có thể đưa ra quyết định về dung lượng trước khi triển khai ứng dụng để luôn có dung lượng dư thừa.",
+        "Tất cả giấy phép máy chủ tại chỗ có thể dễ dàng chuyển giao và quản lý tập trung trên đám mây.",
+        "Công ty có thể bớt tập trung vào hạ tầng và tập trung nhiều hơn vào việc tạo ra sự khác biệt cho doanh nghiệp.",
+        "Công ty có thể đầu tư nhiều hơn vào chi phí cố định (vốn) và giảm chi phí biến đổi của họ.",
+        "Tài nguyên có thể được tạo, mở rộng, thu hẹp hoặc hủy bỏ dựa trên nhu cầu."
+      ],
+      correct: [2, 4]
+    },
+    {
+      q: "Câu hỏi 41: Điện toán đám mây cải thiện khả năng cấp phát tài nguyên của doanh nghiệp nhằm đáp ứng nhu cầu năng lực như thế nào so với điện toán tại chỗ?",
+      options: [
+        "Tài nguyên đám mây có thể tự động tăng hoặc giảm quy mô tùy theo nhu cầu.",
+        "Tài nguyên đám mây có thể được khóa ở cấp độ tài nguyên.",
+        "Tài nguyên đám mây có thể dự báo được chi phí.",
+        "Tài nguyên đám mây có thể trải qua các đỉnh và đáy trong quá trình sử dụng."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 42: Phát biểu nào mô tả chính xác cách khách hàng có thể sử dụng AWS Support?",
+      options: [
+        "Khách hàng có thể nhận AWS Support cho cả tài khoản thử nghiệm không dùng cho sản xuất và cho các tài khoản sản xuất quan trọng đối với doanh nghiệp.",
+        "Khách hàng nên liên hệ với Support Concierge của họ để cung cấp hỗ trợ kỹ thuật nhanh chóng và hiệu quả.",
+        "Khách hàng được chỉ định một Quản lý tài khoản kỹ thuật (TAM) cho tất cả các gói AWS Support.",
+        "Khách hàng phải chọn một trong ba gói hỗ trợ: Basic Support, Business Support, và Enterprise Support."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 43: Phát biểu nào về các vị trí biên (edge locations) là đúng?",
+      options: [
+        "Amazon CloudFront sử dụng các vị trí biên và bộ nhớ đệm biên khu vực (Regional edge caches) để phân phối nội dung với độ trễ thấp hơn.",
+        "Mạng toàn cầu của AWS bao gồm số lượng lớn các bộ nhớ đệm biên khu vực và số lượng nhỏ hơn các vị trí biên để phân phối nội dung cho người dùng.",
+        "Các điểm hiện diện (points of presence) của AWS cung cấp từ hai đến ba vị trí biên cho mỗi Region.",
+        "Bộ nhớ đệm biên khu vực được sử dụng để đệm dữ liệu thường xuyên cập nhật và phải được làm mới liên tục."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 44: Quản trị viên tài khoản AWS muốn cấp quyền truy cập tạm thời giữa các tài khoản (cross-account access) cho phép người dùng bên ngoài truy cập vào các tài nguyên cụ thể trong tài khoản của họ. Hành động nào sẽ phù hợp với thực hành tốt nhất về sử dụng các phiên làm việc tạm thời?",
+      options: [
+        "Tạo một nhóm AWS Identity and Access Management (IAM), cấp quyền tài nguyên cho nhóm, sau đó thêm người dùng IAM vào nhóm.",
+        "Tạo một tài khoản người dùng IAM mới cho mỗi người dùng cần truy cập.",
+        "Tạo một chính sách IAM cho phép người dùng bên ngoài truy cập các tài nguyên cụ thể.",
+        "Tạo một vai trò IAM có thể được đảm nhận bởi người dùng bên ngoài và cấp cho vai trò đó quyền truy cập vào các tài nguyên cụ thể."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 45: Một công ty phải tạo báo cáo về bất kỳ thay đổi nào đối với cài đặt thể hiện Amazon EC2 của mình. Họ nên sử dụng dịch vụ AWS nào?",
+      options: [
+        "Amazon CloudWatch",
+        "AWS Config",
+        "AWS Artifact",
+        "AWS CloudTrail"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 46: Quản trị viên mạng muốn cấu hình một subnet công khai và định tuyến lưu lượng truy cập vào/ra đến và từ một thể hiện Amazon EC2 trong subnet công khai đó ra internet công khai. Họ nên sử dụng tính năng nào của Virtual Private Cloud (VPC)?",
+      options: [
+        "A network address translation (NAT) gateway",
+        "VPC sharing",
+        "A network access control list (ACL)",
+        "An internet gateway"
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 47: Phát biểu nào mô tả chính xác Mạng phân phối nội dung (CDN)?",
+      options: [
+        "CDN lưu trữ bộ nhớ đệm (cache) cho các tệp được yêu cầu thường xuyên.",
+        "CDN tạo kết nối nhanh giữa các máy chủ gốc (origin servers).",
+        "CDN là một nhóm máy chủ cấp Khu vực (Regional).",
+        "CDN tăng tốc độ phân giải tên miền cho các máy chủ ứng dụng."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 48: Một nhà phát triển đang thử nghiệm một bản mẫu trên Amazon EC2. Các thể hiện bị hủy sau khi thử nghiệm, nhưng ứng dụng yêu cầu điện toán không bị gián đoạn trong khi xử lý. Loại định giá thể hiện Amazon EC2 nào đáp ứng nhu cầu với chi phí thấp nhất?",
+      options: [
+        "Scheduled Reserved Instance",
+        "Reserved Instance",
+        "On-Demand Instance",
+        "Spot Instance"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 49: Nhóm bảo mật (Security Group) đóng vai trò gì trong việc quản lý truy cập vào các thể hiện Amazon EC2?",
+      options: [
+        "Nhóm bảo mật xác định các vai trò AWS Identity and Access Management (IAM) có thể truy cập thể hiện.",
+        "Nhóm bảo mật cung cấp một tập hợp các quy tắc để kiểm soát lưu lượng truy cập đến hoặc đi từ một thể hiện.",
+        "Nhóm bảo mật xác định khóa công khai và riêng tư cần thiết để kết nối với thể hiện Amazon EC2.",
+        "Nhóm bảo mật kiểm soát truy cập đầu vào tới subnet mà Amazon EC2 liên kết."
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 50: Phát biểu nào về Amazon Elastic Block Store (Amazon EBS) là đúng?",
+      options: [
+        "Các ổ lưu trữ Amazon EBS được tự động sao chép qua nhiều Khu vực sẵn sàng (Availability Zones).",
+        "Các ổ lưu trữ Amazon EBS không được khuyến nghị cho bộ lưu trữ yêu cầu cập nhật thường xuyên.",
+        "Các ổ lưu trữ Amazon EBS tồn tại độc lập với các thể hiện Amazon EC2 mà chúng được gắn vào.",
+        "Các ổ lưu trữ Amazon EBS không thể thay đổi kích thước."
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 51: Phát biểu nào về các dịch vụ lưu trữ AWS là chính xác?",
+      options: [
+        "Để truy cập Amazon Elastic File System (Amazon EFS), hệ thống tệp phải được gắn (mounted) vào một thể hiện Amazon EC2 trong Virtual Private Cloud (VPC) của bạn.",
+        "Các ổ lưu trữ Amazon Elastic Block Store (Amazon EBS) cung cấp bộ lưu trữ khối tạm thời cho Amazon EC2, nhưng chúng không tồn tại khi thể hiện EC2 bị dừng.",
+        "Amazon EC2 instance store là lựa chọn tốt để chạy xử lý và phân tích dữ liệu lớn.",
+        "Amazon EC2 instance store cung cấp bộ lưu trữ bền vững cho thể hiện Amazon EC2 mà nó được gắn vào, nhưng không khả dụng cho các thể hiện EC2 khác."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 52: Một công ty cần lưu trữ hàng tỷ sự kiện hàng ngày dung lượng nhỏ để sử dụng cho phân tích. Tùy chọn lưu trữ nào phù hợp nhất với trường hợp sử dụng này?",
+      options: [
+        "Amazon S3",
+        "Amazon Elastic Block Store (Amazon EBS)",
+        "Amazon Elastic Container Service (Amazon ECS)",
+        "Amazon EC2 instance store"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 53: Tùy chọn nào là trách nhiệm của công ty khi vận hành Amazon RDS?",
+      options: [
+        "Vá lỗi phần mềm cơ sở dữ liệu.",
+        "Cài đặt hệ điều hành.",
+        "Tối ưu hóa ứng dụng.",
+        "Vá lỗi hệ điều hành."
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 54: Kịch bản nào mô tả tốt nhất trường hợp sử dụng cho Amazon Aurora?",
+      options: [
+        "Một công ty cần cơ sở dữ liệu để lưu trữ dữ liệu bán cấu trúc (semistructured data).",
+        "Một công ty muốn chạy cơ sở dữ liệu Oracle trên đám mây.",
+        "Một công ty cần một kho dữ liệu (data warehouse) có thể truy vấn bằng các công cụ Business Intelligence tiêu chuẩn.",
+        "Một công ty cần một cơ sở dữ liệu tương thích với PostgreSQL có độ sẵn sàng cao."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 55: Phát biểu nào phản ánh nguyên tắc thiết kế thuộc trụ cột Độ tin cậy (Reliability pillar) của AWS Well-Architected Framework?",
+      options: [
+        "Hạn chế tự động hóa khi cập nhật hạ tầng.",
+        "Mở rộng theo chiều dọc (scale vertically) lên loại thể hiện lớn nhất mà ngân sách của bạn cho phép dựa trên ước tính dung lượng.",
+        "Không triển khai mã lên môi trường sản xuất cho đến khi bạn chắc chắn rằng nó không thể thất bại.",
+        "Thay thế một tài nguyên lớn bằng nhiều tài nguyên nhỏ hơn và phân phối các yêu cầu trên các tài nguyên nhỏ hơn này."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 56: Phát biểu nào mô tả tính sẵn sàng cao (high availability)?",
+      options: [
+        "Đó là xác suất toàn bộ hệ thống của bạn sẽ hoạt động như dự kiến trong một khoảng thời gian xác định.",
+        "Đó là thước đo tổng thời gian phục vụ chia cho số lần thất bại.",
+        "Một hệ thống có thể cung cấp chức năng dự kiến khi người dùng yêu cầu.",
+        "Một hệ thống có thể chịu đựng một mức độ suy giảm nhất định mà không bị ngừng hoạt động."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 57: Một công ty có một ứng dụng đang chạy trên hai thể hiện Amazon EC2. Họ muốn giảm dung lượng EC2 nhàn rỗi. Tải ứng dụng rất khó dự báo và họ muốn giữ mức sử dụng CPU gần 40 phần trăm trên tất cả các thể hiện. Họ nên cấu hình loại Amazon EC2 Auto Scaling nào?",
+      options: [
+        "Manual scaling (Mở rộng thủ công)",
+        "Scheduled scaling (Mở rộng theo lịch trình)",
+        "Predictive scaling (Mở rộng dự đoán)",
+        "Dynamic scaling (Mở rộng động)"
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 58: Phát biểu nào mô tả chính xác cách sử dụng Amazon EC2 Auto Scaling?",
+      options: [
+        "Amazon EC2 Auto Scaling cho phép ứng dụng tự động thêm tài nguyên, nhưng không thể tự động thu hẹp lại.",
+        "Amazon EC2 Auto Scaling hữu ích cho khối lượng công việc động, không thể dự đoán nhưng không mang lại nhiều giá trị cho khối lượng công việc có thể dự đoán được.",
+        "Kích thước của nhóm Amazon EC2 Auto Scaling sẽ tự động tăng và giảm dựa trên cấu hình của nó và số lượng thể hiện không thể điều chỉnh thủ công.",
+        "Amazon EC2 Auto Scaling hữu ích cho khối lượng công việc có thể dự đoán được."
+      ],
+      correct: [2]
+    }
+  ]  
 };
