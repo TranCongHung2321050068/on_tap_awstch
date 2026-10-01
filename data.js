@@ -2937,7 +2937,7 @@ const examsData = {
     }
   ],
   12: [ 
-    [
+    
   // ================= BỘ 1 (1 - 20) =================
   {
     question: "Câu 1: Yêu cầu IT nào sẽ khiến một kiến trúc sư lựa chọn mô hình dịch vụ đám mây Hạ tầng như một Dịch vụ (IaaS)?",
