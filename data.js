@@ -2936,653 +2936,596 @@ const examsData = {
       correct: [3]
     }
   ],
-  12: [ 
-        // ================= BỘ 1 (1 - 20) =================
-      {
-        question: "Câu 1: Yêu cầu IT nào sẽ khiến một kiến trúc sư lựa chọn mô hình dịch vụ đám mây Hạ tầng như một Dịch vụ (IaaS)?",
-        answers: [
-          "A. Một công ty muốn chạy một instance được quản lý cho marketplace.",
-          "B. Một công ty muốn sử dụng giải pháp email trên nền tảng web.",
-          "C. Một công ty muốn duy trì mức độ linh hoạt cao nhất đối với các tài nguyên IT của mình.",
-          "D. Một công ty muốn duy trì quyền kiểm soát các ứng dụng của mình nhưng tránh việc bảo trì máy chủ và hệ điều hành."
-        ],
-        correct: 2,
-        explanation: "IaaS cung cấp mức độ linh hoạt và quyền kiểm soát cao nhất đối với tài nguyên IT và hạ tầng phần cứng."
-      },
-      {
-        question: "Câu 2: Lợi ích kinh tế theo quy mô (economies of scale) giúp ích như thế nào cho khách hàng chuyển từ điện toán tại chỗ (on-premises) sang điện toán đám mây?",
-        answers: [
-          "A. Khách hàng có toàn quyền kiểm soát hạ tầng của họ.",
-          "B. Khách hàng có thể mở rộng máy chủ theo chiều ngang.",
-          "C. Khách hàng có thể đạt được chi phí biến đổi thấp hơn và mở rộng hạ tầng vượt quá khả năng tại chỗ.",
-          "D. Khách hàng có thể triển khai tài nguyên trên toàn cầu."
-        ],
-        correct: 2,
-        explanation: "Quy mô lớn giúp AWS giảm giá thành dịch vụ và chuyển lợi ích đó cho khách hàng dưới dạng giá biến đổi thấp hơn."
-      },
-      {
-        question: "Câu 3: Phát biểu nào mô tả chính xác cách khách hàng có thể sử dụng AWS Support?",
-        answers: [
-          "A. Khách hàng có thể nhận AWS Support cho cả các tài khoản thử nghiệm phi sản xuất và các tài khoản sản xuất quan trọng đối với doanh nghiệp.",
-          "B. Khách hàng nên liên hệ với Support Concierge để nhận hỗ trợ kỹ thuật nhanh chóng và hiệu quả.",
-          "C. Khách hàng được gán một Quản lý Tài khoản Kỹ thuật (TAM) cho tất cả các gói AWS Support.",
-          "D. Khách hàng phải chọn một trong các gói hỗ trợ: Basic Support, Developer Support, Business Support, và Enterprise Support."
-        ],
-        correct: 3,
-        explanation: "AWS yêu cầu khách hàng lựa chọn một gói hỗ trợ phù hợp với nhu cầu từ Basic đến Enterprise."
-      },
-      {
-        question: "Câu 4: Phát biểu nào sau đây về AWS Regions là đúng?",
-        answers: [
-          "A. Dữ liệu được lưu trữ trong một AWS Region không phải tuân theo các yêu cầu tuân thủ địa lý.",
-          "B. Tất cả các Region khả dụng đều được bật theo mặc định trong một tài khoản AWS.",
-          "C. Tất cả các tài khoản AWS đều có thể truy cập tất cả các AWS Region.",
-          "D. Việc sử dụng một Region càng gần người dùng càng tốt có thể làm giảm độ trễ."
-        ],
-        correct: 3,
-        explanation: "Đặt ứng dụng và tài nguyên gần người dùng cuối về mặt địa lý giúp giảm độ trễ truy cập (latency)."
-      },
-      {
-        question: "Câu 5: Phát biểu nào về các chính sách (policies) AWS IAM là chính xác? (Chọn câu đúng nhất về Identity-based policy)",
-        answers: [
-          "A. Các chính sách dựa trên định danh (Identity-based) chỉ có thể được gắn vào một thực thể duy nhất.",
-          "B. Các chính sách dựa trên tài nguyên (Resource-based) cho phép truy cập theo mặc định.",
-          "C. Access control lists (ACLs) là một dạng của chính sách dựa trên tài nguyên.",
-          "D. Các chính sách dựa trên định danh (Identity-based) được gắn vào IAM user, group, hoặc role."
-        ],
-        correct: 3,
-        explanation: "Identity-based policies được gắn trực tiếp vào người dùng (User), nhóm (Group) hoặc vai trò (Role) trong IAM."
-      },
-      {
-        question: "Câu 6: Phát biểu nào về bảo mật dữ liệu đang truyền (data in transit) là đúng?",
-        answers: [
-          "A. TLS là một giao thức độc quyền được sử dụng để bảo mật lưu lượng giữa các AWS VPC.",
-          "B. Dữ liệu di chuyển giữa các dịch vụ AWS được mã hóa bằng TLS và AWS KMS.",
-          "C. Chứng chỉ TLS có thể được quản lý bằng AWS Certificate Manager (ACM).",
-          "D. Lưu lượng web chạy qua HTTP được mã hóa bằng TLS."
-        ],
-        correct: 2,
-        explanation: "AWS Certificate Manager (ACM) hỗ trợ tạo, quản lý và triển khai chứng chỉ SSL/TLS."
-      },
-      {
-        question: "Câu 7: Tùy chọn nào mô tả một khả năng của Amazon Virtual Private Clouds (VPCs)?",
-        answers: [
-          "A. Chúng có thể trải rộng trên nhiều Availability Zones (AZs).",
-          "B. Chúng có thể thay đổi dải địa chỉ theo ý muốn sau khi tạo.",
-          "C. Chúng có thể được cấu hình như một phần độc lập về mặt vật lý của AWS Cloud.",
-          "D. Chúng có thể thuộc về nhiều AWS Region."
-        ],
-        correct: 0,
-        explanation: "Một VPC nằm trong một Region duy nhất nhưng có thể trải rộng qua nhiều Availability Zones (AZs)."
-      },
-      {
-        question: "Câu 8: Cấu hình nào đại diện cho việc sử dụng hợp lệ các Security Groups trong một VPC?",
-        answers: [
-          "A. Giới hạn truy cập đầu vào tới subnet riêng tư của VPC.",
-          "B. Đặt một quy tắc từ chối (deny) ngăn lưu lượng đi ra từ một EC2 instance.",
-          "C. Giới hạn lưu lượng đi ra từ một EC2 instance trong VPC tới một máy chủ cơ sở dữ liệu cụ thể.",
-          "D. Đặt một quy tắc từ chối ngăn truy cập vào subnet từ internet công cộng."
-        ],
-        correct: 2,
-        explanation: "Security Groups quản lý lưu lượng cho từng EC2 Instance (không theo Subnet) và chỉ hỗ trợ các quy tắc Allow."
-      },
-      {
-        question: "Câu 9: Một lập trình viên đang kiểm thử một bản mẫu trên Amazon EC2. Các instance sẽ bị hủy sau khi kiểm thử, nhưng ứng dụng yêu cầu tính toán không bị gián đoạn trong khi xử lý. Loại giá Amazon EC2 instance nào đáp ứng nhu cầu với chi phí thấp nhất?",
-        answers: [
-          "A. Scheduled Reserved Instance",
-          "B. Reserved Instance",
-          "C. On-Demand Instance",
-          "D. Spot Instance"
-        ],
-        correct: 2,
-        explanation: "On-Demand phù hợp với công việc ngắn hạn, không cố định nhưng đòi hỏi không bị gián đoạn (Spot Instance có thể bị ngắt ngẫu nhiên)."
-      },
-      {
-        question: "Câu 10: Security Groups đóng vai trò gì trong việc quản lý truy cập vào các Amazon EC2 instance?",
-        answers: [
-          "A. Security Groups định nghĩa các IAM role có thể truy cập instance.",
-          "B. Security Groups cung cấp một tập hợp các quy tắc để kiểm soát lưu lượng đến hoặc đi từ một instance.",
-          "C. Security Groups xác định các khóa public và private cần thiết để kết nối với EC2 instance.",
-          "D. Security Groups kiểm soát truy cập đầu vào subnet mà EC2 liên kết."
-        ],
-        correct: 1,
-        explanation: "Security Group hoạt động như một tường lửa ảo cấp Instance để kiểm soát lưu lượng Inbound/Outbound."
-      },
-      {
-        question: "Câu 11: Phát biểu nào về Amazon Elastic Block Store (Amazon EBS) là đúng?",
-        answers: [
-          "A. Các ổ đĩa Amazon EBS tự động được nhân bản qua nhiều Availability Zones.",
-          "B. Các ổ đĩa Amazon EBS không được khuyến nghị cho lưu trữ yêu cầu cập nhật thường xuyên.",
-          "C. Các ổ đĩa Amazon EBS tồn tại độc lập với các Amazon EC2 instance mà chúng được gắn vào.",
-          "D. Các ổ đĩa Amazon EBS không thể thay đổi kích thước."
-        ],
-        correct: 2,
-        explanation: "EBS là ổ đĩa khối mạng lưu trữ bền vững, tồn tại độc lập kể cả khi EC2 bị terminate."
-      },
-      {
-        question: "Câu 12: Một công ty tải các biểu mẫu PDF lên Amazon S3 và phải lưu trữ trong 1 năm. Các biểu mẫu hiếm khi được truy cập sau 1 tuần, nhưng phải sẵn sàng trong vòng 1 ngày khi được yêu cầu. Chính sách vòng đời (lifecycle policy) nào tối ưu chi phí nhất?",
-        answers: [
-          "A. Chuyển object từ S3 Standard-Infrequent Access sang S3 Standard sau 1 tuần.",
-          "B. Chuyển object từ S3 Standard sang S3 One Zone-IA sau 7 ngày. Xóa object sau 365 ngày.",
-          "C. Chuyển object từ S3 Standard sang S3 Standard-IA sau 7 ngày.",
-          "D. Chuyển object từ S3 Standard sang Amazon S3 Glacier Flexible Retrieval sau 7 ngày. Xóa chúng sau 365 ngày."
-        ],
-        correct: 3,
-        explanation: "S3 Glacier Flexible Retrieval giúp tối ưu chi phí lưu trữ lâu dài và đáp ứng thời gian truy xuất dữ liệu từ vài phút đến 24h."
-      },
-      {
-        question: "Câu 13: Một công ty cần lưu trữ hàng tỷ sự kiện hàng ngày dung lượng nhỏ để phân tích. Tùy chọn lưu trữ nào phù hợp nhất cho trường hợp này?",
-        answers: [
-          "A. Amazon Elastic Block Store (Amazon EBS)",
-          "B. Amazon S3",
-          "C. Amazon Elastic Container Service (Amazon ECS)",
-          "D. Amazon EC2 instance store"
-        ],
-        correct: 1,
-        explanation: "Amazon S3 có khả năng mở rộng dung lượng vô tận, rất tối ưu để lưu trữ dữ liệu thô phục vụ Big Data Analytics."
-      },
-      {
-        question: "Câu 14: Tùy chọn nào là trách nhiệm của khách hàng khi chạy Amazon RDS?",
-        answers: [
-          "A. Vá lỗi hệ điều hành",
-          "B. Cài đặt hệ điều hành",
-          "C. Tối ưu hóa ứng dụng và truy vấn",
-          "D. Vá lỗi phần mềm cơ sở dữ liệu"
-        ],
-        correct: 2,
-        explanation: "Theo Shared Responsibility Model đối với dịch vụ PaaS như RDS, AWS quản lý phần cứng, OS và DB patching; khách hàng quản lý dữ liệu và ứng dụng."
-      },
-      {
-        question: "Câu 15: Kịch bản nào mô tả đúng nhất trường hợp sử dụng cho Amazon Aurora?",
-        answers: [
-          "A. Một công ty muốn chạy cơ sở dữ liệu Oracle trên đám mây.",
-          "B. Một công ty cần một cơ sở dữ liệu tương thích với PostgreSQL có tính sẵn sàng cao.",
-          "C. Một công ty cần một kho dữ liệu có thể truy vấn bằng các công cụ BI chuẩn.",
-          "D. Một công ty cần một cơ sở dữ liệu để lưu trữ dữ liệu bán cấu trúc."
-        ],
-        correct: 1,
-        explanation: "Amazon Aurora là cơ sở dữ liệu quan hệ hiệu năng cao do AWS phát triển, tương thích hoàn toàn với MySQL và PostgreSQL."
-      },
-      {
-        question: "Câu 16: Phát biểu nào phản ánh nguyên tắc thiết kế của trụ cột Bảo mật (Security) trong AWS Well-Architected Framework?",
-        answers: [
-          "A. Đảm bảo nhân viên chủ động giám sát các rủi ro tiềm ẩn bằng tay.",
-          "B. Không triển khai giải pháp lên môi trường production cho đến khi chắc chắn không có rủi ro.",
-          "C. Phân tán quản lý quyền truy cập.",
-          "D. Áp dụng bảo mật ở tất cả các lớp của kiến trúc (Apply security at all layers)."
-        ],
-        correct: 3,
-        explanation: "Nguyên tắc 'Defense in depth' yêu cầu áp dụng kiểm soát bảo mật ở nhiều tầng (Mạng, OS, Ứng dụng, Dữ liệu)."
-      },
-      {
-        question: "Câu 17: Loại cảnh báo nào có thể được cung cấp bởi AWS Trusted Advisor?",
-        answers: [
-          "A. Cảnh báo rằng xác thực đa yếu tố (MFA) chưa được kích hoạt trên tài khoản Root.",
-          "B. Cảnh báo về các cuộc gọi API bất thường trong tài khoản AWS.",
-          "C. Cảnh báo rằng một IAM user đã yêu cầu thay đổi quota dịch vụ.",
-          "D. Cảnh báo truy cập trái phép trong tài khoản AWS."
-        ],
-        correct: 0,
-        explanation: "AWS Trusted Advisor hỗ trợ kiểm tra an toàn bảo mật, trong đó bao gồm kiểm tra bật MFA cho tài khoản Root."
-      },
-      {
-        question: "Câu 18: Kịch bản nào nên được xử lý bằng Network Load Balancer (NLB)?",
-        answers: [
-          "A. Một giải pháp phải cân bằng tải các yêu cầu gRPC đến.",
-          "B. Một giải pháp phải cân bằng tải hàng triệu yêu cầu mỗi giây trong khi duy trì độ trễ cực thấp.",
-          "C. Một giải pháp phải định tuyến lưu lượng ở Tầng 7 của mô hình OSI.",
-          "D. Một giải pháp phải hỗ trợ định tuyến lưu lượng đến ứng dụng container dựa trên nội dung yêu cầu."
-        ],
-        correct: 1,
-        explanation: "NLB hoạt động ở Tầng 4 (Transport Layer), có khả năng xử lý hàng triệu yêu cầu/giây với độ trễ cực thấp."
-      },
-      {
-        question: "Câu 19: Phát biểu nào về AWS Auto Scaling là đúng?",
-        answers: [
-          "A. AWS Auto Scaling có thể được sử dụng để tự động mở rộng các bảng và chỉ mục Amazon DynamoDB.",
-          "B. AWS Auto Scaling có thể được sử dụng để tự động mở rộng cơ sở dữ liệu Amazon RDS.",
-          "C. AWS Auto Scaling và Amazon EC2 Auto Scaling là hai khái niệm đồng nghĩa.",
-          "D. Bạn có thể sử dụng Amazon EC2 Auto Scaling hoặc AWS Auto Scaling, nhưng không thể dùng cả hai."
-        ],
-        correct: 0,
-        explanation: "AWS Auto Scaling giám sát ứng dụng và tự động điều chỉnh sức chứa cho nhiều tài nguyên như EC2, DynamoDB, ECS, Aurora."
-      },
-      {
-        question: "Câu 20: Thành phần nào phân phối lưu lượng ứng dụng đến nhiều mục tiêu như EC2 instances trên nhiều Availability Zones?",
-        answers: [
-          "A. Amazon Route 53",
-          "B. Elastic Load Balancing (ELB)",
-          "C. AWS Auto Scaling",
-          "D. Amazon CloudFront"
-        ],
-        correct: 1,
-        explanation: "ELB tự động phân phối lưu lượng truy cập ứng dụng đến nhiều mục tiêu để đảm bảo tính sẵn sàng cao."
-      },
-    
-      // ================= BỘ 2 (21 - 30) =================
-      {
-        question: "Câu 21: Một ứng dụng web cần lưu trữ dữ liệu dạng key-value với độ trễ dưới 10 miligiây. Dịch vụ cơ sở dữ liệu nào phù hợp nhất?",
-        answers: [
-          "A. Amazon RDS",
-          "B. Amazon DynamoDB",
-          "C. Amazon Redshift",
-          "D. Amazon DocumentDB"
-        ],
-        correct: 1,
-        explanation: "Amazon DynamoDB là cơ sở dữ liệu NoSQL Key-Value cung cấp độ trễ ở mức miligiây đơn chữ số tại mọi quy mô."
-      },
-      {
-        question: "Câu 22: Công ty muốn thiết lập kết nối mạng riêng biệt, chuyên dụng từ trung tâm dữ liệu tại chỗ đến AWS. Dịch vụ nào đáp ứng yêu cầu này?",
-        answers: [
-          "A. AWS Client VPN",
-          "B. Amazon Route 53",
-          "C. AWS Direct Connect",
-          "D. AWS Transit Gateway"
-        ],
-        correct: 2,
-        explanation: "AWS Direct Connect tạo đường truyền vật lý riêng biệt từ mạng On-premises tới AWS, nâng cao băng thông và độ ổn định."
-      },
-      {
-        question: "Câu 23: Công ty muốn theo dõi, ghi lại và quản lý các cuộc gọi API liên quan đến tài khoản AWS của mình. Dịch vụ nào nên được sử dụng?",
-        answers: [
-          "A. Amazon CloudWatch",
-          "B. AWS CloudTrail",
-          "C. AWS Config",
-          "D. AWS Trusted Advisor"
-        ],
-        correct: 1,
-        explanation: "AWS CloudTrail ghi lại mọi hành động API và lịch sử thao tác của tài khoản AWS phục vụ kiểm toán."
-      },
-      {
-        question: "Câu 24: Dịch vụ nào của AWS cung cấp khả năng phân phối nội dung toàn cầu (CDN) giúp tăng tốc độ tải trang web cho người dùng cuối?",
-        answers: [
-          "A. Amazon Route 53",
-          "B. Amazon CloudFront",
-          "C. AWS Global Accelerator",
-          "D. Amazon S3 Glacier"
-        ],
-        correct: 1,
-        explanation: "Amazon CloudFront là dịch vụ Content Delivery Network (CDN) giúp lưu bản sao dữ liệu tại các Edge Location gần người dùng."
-      },
-      {
-        question: "Câu 25: Mô hình trách nhiệm chung (Shared Responsibility Model) quy định trách nhiệm nào thuộc về AWS?",
-        answers: [
-          "A. Mã hóa dữ liệu lưu trữ phía khách hàng",
-          "B. Quản lý quyền IAM và mật khẩu người dùng",
-          "C. Bảo vệ hạ tầng vật lý của các Trung tâm dữ liệu (Data Centers)",
-          "D. Vá lỗi hệ điều hành trên các máy chủ EC2"
-        ],
-        correct: 2,
-        explanation: "AWS chịu trách nhiệm bảo mật 'CỦA' Đám mây (Security OF the Cloud), bao gồm phần cứng, hạ tầng mạng và Trung tâm dữ liệu."
-      },
-      {
-        question: "Câu 26: Công ty muốn triển khai ứng dụng mà không cần quản lý máy chủ, tự động mở rộng theo lưu lượng truy cập. Dịch vụ Serverless nào phù hợp?",
-        answers: [
-          "A. Amazon EC2",
-          "B. Amazon ECS",
-          "C. AWS Lambda",
-          "D. AWS Fargate"
-        ],
-        correct: 2,
-        explanation: "AWS Lambda là dịch vụ FaaS (Function-as-a-Service) Serverless tiêu biểu, chạy code chỉ khi có sự kiện kích hoạt."
-      },
-      {
-        question: "Câu 27: Dịch vụ nào giúp dự đoán và quản lý chi phí AWS bằng cách gửi thông báo khi chi phí vượt ngưỡng ngân sách đặt trước?",
-        answers: [
-          "A. AWS Cost Explorer",
-          "B. AWS Budgets",
-          "C. AWS Pricing Calculator",
-          "D. AWS Organizations"
-        ],
-        correct: 1,
-        explanation: "AWS Budgets cho phép thiết lập ngân sách tùy chỉnh và phát cảnh báo khi chi phí thực tế hoặc dự báo vượt ngưỡng."
-      },
-      {
-        question: "Câu 28: Để kết nối nhiều Amazon VPC và mạng tại chỗ lại với nhau thông qua một hub trung tâm, bạn nên dùng dịch vụ nào?",
-        answers: [
-          "A. VPC Peering",
-          "B. AWS Direct Connect",
-          "C. AWS Transit Gateway",
-          "D. Internet Gateway"
-        ],
-        correct: 2,
-        explanation: "AWS Transit Gateway đóng vai trò như một bộ định tuyến trung tâm (cloud router) kết nối hàng ngàn VPC và mạng On-premise."
-      },
-      {
-        question: "Câu 29: Dịch vụ lưu trữ tệp tin nào của AWS hỗ trợ chuẩn giao thức POSIX cho phép nhiều EC2 instance truy cập đồng thời?",
-        answers: [
-          "A. Amazon EBS",
-          "B. Amazon EFS",
-          "C. Amazon S3",
-          "D. Amazon EC2 Instance Store"
-        ],
-        correct: 1,
-        explanation: "Amazon EFS cung cấp tệp tin hệ thống dạng Elastic File System tương thích POSIX cho phép chia sẻ dữ liệu đa máy chủ EC2."
-      },
-      {
-        question: "Câu 30: Công ty muốn lưu trữ khối lượng lớn dữ liệu phân tích cấu trúc lớn (Data Warehouse) để thực hiện các truy vấn phức tạp. Dịch vụ nào phù hợp?",
-        answers: [
-          "A. Amazon DynamoDB",
-          "B. Amazon ElastiCache",
-          "C. Amazon Redshift",
-          "D. Amazon Aurora"
-        ],
-        correct: 2,
-        explanation: "Amazon Redshift là dịch vụ kho dữ liệu đám mây (Data Warehouse) giúp phân tích dữ liệu quy mô PetaByte."
-      },
-    
-      // ================= BỘ 3 (31 - 40) =================
-      {
-        question: "Câu 31: Khái niệm Elasticity (Tính co giãn) trên điện toán đám mây AWS được hiểu là gì?",
-        answers: [
-          "A. Khả năng tự động tăng/giảm tài nguyên dựa trên nhu cầu thực tế.",
-          "B. Khả năng chịu lỗi và tự phục hồi khi hệ thống gặp sự cố.",
-          "C. Khả năng mở rộng dung lượng máy chủ lên mức tối đa ngay từ đầu.",
-          "D. Khả năng di chuyển ứng dụng giữa các đám mây khác nhau."
-        ],
-        correct: 0,
-        explanation: "Tính co giãn (Elasticity) giúp tự động phân bổ tài nguyên phù hợp với nhu cầu tăng/giảm linh hoạt của ứng dụng."
-      },
-      {
-        question: "Câu 32: Khách hàng muốn đảm bảo tính sẵn sàng cao (High Availability) cho ứng dụng trên EC2. Lựa chọn kiến trúc nào là tốt nhất?",
-        answers: [
-          "A. Triển khai EC2 trên một Availability Zone đơn lẻ.",
-          "B. Triển khai EC2 trên nhiều Availability Zones (Multi-AZ) trong cùng một Region.",
-          "C. Triển khai EC2 trên nhiều tài khoản AWS khác nhau.",
-          "D. Đặt EC2 trong các Subnet riêng tư (Private Subnet) khác nhau."
-        ],
-        correct: 1,
-        explanation: "Triển khai đa vùng khả dụng (Multi-AZ) giúp đảm bảo nếu một AZ gặp sự cố, hệ thống vẫn duy trì hoạt động."
-      },
-      {
-        question: "Câu 33: Dịch vụ nào cung cấp khả năng quét lỗ hổng bảo mật tự động trên các Amazon EC2 instance và container image?",
-        answers: [
-          "A. AWS Shield",
-          "B. AWS WAF",
-          "C. Amazon Inspector",
-          "D. Amazon GuardDuty"
-        ],
-        correct: 2,
-        explanation: "Amazon Inspector tự động phân tích và đánh giá an ninh bảo mật cho ứng dụng, EC2 và container images."
-      },
-      {
-        question: "Câu 34: Công cụ nào cho phép người dùng viết mã hạ tầng dạng khai báo (Infrastructure as Code - IaC) để tự động hóa việc tạo tài nguyên AWS?",
-        answers: [
-          "A. AWS OpsWorks",
-          "B. AWS CloudFormation",
-          "C. AWS Systems Manager",
-          "D. AWS CodeDeploy"
-        ],
-        correct: 1,
-        explanation: "AWS CloudFormation cho phép tạo và quản lý tài nguyên AWS bằng template file (JSON/YAML)."
-      },
-      {
-        question: "Câu 35: Để cấu hình quy tắc chặn các cuộc tấn công phổ biến như SQL Injection hoặc Cross-Site Scripting (XSS) trên web application, dịch vụ nào được dùng?",
-        answers: [
-          "A. AWS Shield Advanced",
-          "B. AWS WAF (Web Application Firewall)",
-          "C. Security Groups",
-          "D. Network ACLs"
-        ],
-        correct: 1,
-        explanation: "AWS WAF kiểm soát lưu lượng web ở Tầng 7, giúp ngăn chặn các kỹ thuật tấn công như SQLi, XSS."
-      },
-      {
-        question: "Câu 36: Dịch vụ nào cung cấp bộ lưu trữ tạm thời tốc độ cao gắn trực tiếp vào máy chủ vật lý chứa EC2 instance?",
-        answers: [
-          "A. Amazon EBS",
-          "B. EC2 Instance Store",
-          "C. Amazon EFS",
-          "D. Amazon S3"
-        ],
-        correct: 1,
-        explanation: "Instance Store được gắn trực tiếp vào máy chủ vật lý, cung cấp I/O cực cao nhưng dữ liệu sẽ mất khi Instance Stop/Terminate."
-      },
-      {
-        question: "Câu 37: Dịch vụ AWS nào quản lý khóa mã hóa và giúp mã hóa dữ liệu trên các dịch vụ khác của AWS?",
-        answers: [
-          "A. AWS Certificate Manager (ACM)",
-          "B. AWS Key Management Service (AWS KMS)",
-          "C. AWS Secrets Manager",
-          "D. AWS IAM"
-        ],
-        correct: 1,
-        explanation: "AWS KMS quản lý việc tạo và kiểm soát các khóa mã hóa (Cryptographic Keys)."
-      },
-      {
-        question: "Câu 38: Khi chọn mua EC2 Instance với cam kết sử dụng liên tục 1 hoặc 3 năm để nhận chi phí ưu đãi lớn nhất, loại hình thanh toán nào nên chọn?",
-        answers: [
-          "A. On-Demand Instances",
-          "B. Reserved Instances hoặc Savings Plans",
-          "C. Spot Instances",
-          "D. Dedicated Hosts"
-        ],
-        correct: 1,
-        explanation: "Reserved Instances/Savings Plans mang lại ưu đãi giảm giá đến 72% khi người dùng cam kết sử dụng 1-3 năm."
-      },
-      {
-        question: "Câu 39: Dịch vụ nào giúp tập trung quản lý nhiều tài khoản AWS và thiết lập quản trị chung cho toàn tổ chức?",
-        answers: [
-          "A. AWS IAM",
-          "B. AWS Organizations",
-          "C. AWS Control Tower",
-          "D. AWS Config"
-        ],
-        correct: 1,
-        explanation: "AWS Organizations hỗ trợ hợp nhất thanh toán, quản lý tập trung và phân chia quyền giữa nhiều tài khoản AWS."
-      },
-      {
-        question: "Câu 40: Trong VPC, Network Access Control List (NACL) hoạt động như thế nào so với Security Group?",
-        answers: [
-          "A. NACL kiểm soát ở cấp độ Instance, Security Group kiểm soát ở cấp độ Subnet.",
-          "B. NACL hoạt động ở cấp độ Subnet và hỗ trợ cả quy tắc Allow và Deny.",
-          "C. NACL là Stateful, Security Group là Stateless.",
-          "D. NACL chỉ áp dụng cho lưu lượng đi ra (outbound)."
-        ],
-        correct: 1,
-        explanation: "NACL bảo vệ ở cấp độ Subnet, kiểm soát theo Stateless và hỗ trợ định nghĩa cả Allow và Deny."
-      },
-    
-      // ================= BỘ 4 (41 - 50) =================
-      {
-        question: "Câu 41: Dịch vụ nào cho phép lưu trữ bộ nhớ đệm (Caching) trong bộ nhớ (In-memory) để tăng tốc độ phản hồi cho cơ sở dữ liệu?",
-        answers: [
-          "A. Amazon DynamoDB Accelerator (DAX)",
-          "B. Amazon ElastiCache",
-          "C. Amazon CloudFront",
-          "D. Amazon Redshift"
-        ],
-        correct: 1,
-        explanation: "Amazon ElastiCache triển khai Redis hoặc Memcached giúp cache dữ liệu trong bộ nhớ RAM với độ trễ siêu thấp."
-      },
-      {
-        question: "Câu 42: Để triển khai ứng dụng container hóa mà không cần quản lý máy chủ bên dưới, bạn nên chọn sự kết hợp nào?",
-        answers: [
-          "A. Amazon EC2 và Amazon ECS",
-          "B. Amazon ECS (hoặc EKS) kết hợp với AWS Fargate",
-          "C. AWS Lambda và Amazon S3",
-          "D. EC2 Auto Scaling và Elastic Load Balancer"
-        ],
-        correct: 1,
-        explanation: "AWS Fargate là engine Serverless Compute cho ECS/EKS, cho phép chạy Container mà không cần quản lý EC2 cluster."
-      },
-      {
-        question: "Câu 43: Dịch vụ nào giúp gửi tin nhắn thông báo (Push notification/Email/SMS) theo mô hình Publisher/Subscriber?",
-        answers: [
-          "A. Amazon SQS",
-          "B. Amazon SNS (Simple Notification Service)",
-          "C. AWS SES",
-          "D. Amazon EventBridge"
-        ],
-        correct: 1,
-        explanation: "Amazon SNS triển khai mô hình Pub/Sub cho phép phát tin nhắn đồng thời tới nhiều subscriber."
-      },
-      {
-        question: "Câu 44: Dịch vụ hàng đợi tin nhắn (Message Queue) giúp phân tách (decouple) các thành phần trong ứng dụng dạng microservices là gì?",
-        answers: [
-          "A. Amazon SQS (Simple Queue Service)",
-          "B. Amazon SNS",
-          "C. Amazon Kinesis",
-          "D. AWS Step Functions"
-        ],
-        correct: 0,
-        explanation: "Amazon SQS là dịch vụ hàng đợi Message Queue giúp làm giảm sự phụ thuộc chặt chẽ giữa các thành phần ứng dụng."
-      },
-      {
-        question: "Câu 45: Phát biểu nào đúng về AWS Edge Locations?",
-        answers: [
-          "A. Là nơi đặt các trung tâm dữ liệu chính chứa dịch vụ EC2 và RDS.",
-          "B. Là các điểm hiện diện trên toàn cầu được dùng bởi CloudFront để cache nội dung gần người dùng.",
-          "C. Là các vùng độc lập trong một AWS Region.",
-          "D. Là các máy chủ chuyên dụng đặt tại văn phòng khách hàng."
-        ],
-        correct: 1,
-        explanation: "Edge Location là các điểm lưu đệm (cache) phân bố toàn cầu được dịch vụ CDN CloudFront sử dụng."
-      },
-      {
-        question: "Câu 46: Công cụ nào hỗ trợ phân tích lịch sử thay đổi cấu hình tài nguyên AWS và kiểm tra tuân thủ chính sách?",
-        answers: [
-          "A. AWS CloudTrail",
-          "B. AWS Config",
-          "C. AWS Trusted Advisor",
-          "D. AWS Artifact"
-        ],
-        correct: 1,
-        explanation: "AWS Config ghi lại chi tiết mối quan hệ và lịch sử thay đổi cấu hình tài nguyên AWS."
-      },
-      {
-        question: "Câu 47: Dịch vụ nào cung cấp các báo cáo tuân thủ bảo mật và thỏa thuận pháp lý của AWS cho khách hàng tải về?",
-        answers: [
-          "A. AWS KMS",
-          "B. AWS Artifact",
-          "C. AWS Shield",
-          "D. AWS Security Hub"
-        ],
-        correct: 1,
-        explanation: "AWS Artifact là kho cổng thông tin truy cập tự phục vụ các chứng nhận và báo cáo tuân thủ của AWS."
-      },
-      {
-        question: "Câu 48: Thành phần nào trong VPC cho phép các EC2 instance nằm trong Private Subnet kết nối ra Internet nhưng ngăn chiều ngược lại?",
-        answers: [
-          "A. Internet Gateway (IGW)",
-          "B. NAT Gateway",
-          "C. Egress-Only Internet Gateway",
-          "D. VPC Peering"
-        ],
-        correct: 1,
-        explanation: "NAT Gateway cho phép tài nguyên trong Private Subnet đi ra ngoài Internet nhưng ngăn các truy cập chủ động từ bên ngoài."
-      },
-      {
-        question: "Câu 49: Dịch vụ DNS (Domain Name System) nào của AWS giúp định tuyến người dùng đến các ứng dụng web với độ sẵn sàng cao?",
-        answers: [
-          "A. Amazon Route 53",
-          "B. AWS Direct Connect",
-          "C. Amazon CloudFront",
-          "D. AWS Global Accelerator"
-        ],
-        correct: 0,
-        explanation: "Amazon Route 53 là dịch vụ Domain Name System (DNS) có độ sẵn sàng và khả năng mở rộng cao."
-      },
-      {
-        question: "Câu 50: Trụ cột nào trong AWS Well-Architected Framework tập trung vào việc chạy khối lượng công việc hiệu quả và duy trì giá trị kinh doanh?",
-        answers: [
-          "A. Operational Excellence (Vận hành xuất sắc)",
-          "B. Performance Efficiency (Hiệu năng hoạt động)",
-          "C. Cost Optimization (Tối ưu chi phí)",
-          "D. Reliability (Độ tin cậy)"
-        ],
-        correct: 0,
-        explanation: "Trụ cột Operational Excellence chú trọng vào vận hành, giám sát hệ thống và cải tiến quy trình làm việc liên tục."
-      },
-    
-      // ================= BỘ 5 (51 - 58) =================
-      {
-        question: "Câu 51: Khi sử dụng AWS, mô hình chi phí nào áp dụng cho hầu hết các dịch vụ tính toán và lưu trữ?",
-        answers: [
-          "A. Trả tiền cố định hàng tháng",
-          "B. Trả tiền theo dung lượng/thời gian thực tế sử dụng (Pay-as-you-go)",
-          "C. Trả tiền cấp bản quyền cố định",
-          "D. Miễn phí hoàn toàn các tài nguyên cơ bản"
-        ],
-        correct: 1,
-        explanation: "AWS áp dụng mô hình Pay-as-you-go, dùng bao nhiêu trả bấy nhiêu mà không đòi hỏi cam kết lâu dài (ngoại trừ gói ưu đãi)."
-      },
-      {
-        question: "Câu 52: Dịch vụ nào giúp tự động chuyển đổi định dạng phương tiện (video/audio) sang các định dạng tương thích với nhiều thiết bị?",
-        answers: [
-          "A. Amazon Rekognition",
-          "B. AWS Elemental MediaConvert",
-          "C. Amazon Polly",
-          "D. Amazon Transcribe"
-        ],
-        correct: 1,
-        explanation: "AWS Elemental MediaConvert xử lý transcoding chuyển đổi định dạng video/audio đa nền tảng."
-      },
-      {
-        question: "Câu 53: Để bảo vệ ứng dụng web khỏi các cuộc tấn công DDoS cấp độ mạng (Layer 3 và Layer 4), dịch vụ nào được tự động tích hợp mặc định?",
-        answers: [
-          "A. AWS Shield Standard",
-          "B. AWS WAF",
-          "C. Security Groups",
-          "D. Amazon GuardDuty"
-        ],
-        correct: 0,
-        explanation: "AWS Shield Standard được bật sẵn mặc định hoàn toàn miễn phí cho tất cả khách hàng AWS."
-      },
-      {
-        question: "Câu 54: Dịch vụ nào là một kho lưu trữ mã nguồn Git được quản lý hoàn toàn bởi AWS?",
-        answers: [
-          "A. AWS CodePipeline",
-          "B. AWS CodeBuild",
-          "C. AWS CodeCommit",
-          "D. AWS CodeDeploy"
-        ],
-        correct: 2,
-        explanation: "AWS CodeCommit là dịch vụ quản lý nguồn (Source Control) dựa trên mã nguồn mở Git."
-      },
-      {
-        question: "Câu 55: Dịch vụ nào phát hiện mối đe dọa bảo mật bằng cách liên tục phân tích log (CloudTrail, VPC Flow Logs) bằng Machine Learning?",
-        answers: [
-          "A. Amazon GuardDuty",
-          "B. Amazon Macie",
-          "C. AWS Security Hub",
-          "D. Amazon Inspector"
-        ],
-        correct: 0,
-        explanation: "Amazon GuardDuty phát hiện mối đe dọa bảo mật thông minh bằng Machine Learning thông qua phân tíchLog."
-      },
-      {
-        question: "Câu 56: Dịch vụ nào tự động phát hiện và bảo vệ dữ liệu nhạy cảm (như PII, thẻ tín dụng) lưu trữ trên Amazon S3?",
-        answers: [
-          "A. Amazon GuardDuty",
-          "B. Amazon Macie",
-          "C. AWS KMS",
-          "D. AWS Inspector"
-        ],
-        correct: 1,
-        explanation: "Amazon Macie quét dữ liệu S3 để tự động nhận dạng các thông tin nhạy cảm (PII, Financial Data)."
-      },
-      {
-        question: "Câu 57: Công cụ trực quan nào giúp ước tính chi phí hàng tháng cho các dịch vụ AWS trước khi triển khai hệ thống?",
-        answers: [
-          "A. AWS Cost Explorer",
-          "B. AWS Pricing Calculator",
-          "C. AWS Budgets",
-          "D. AWS Cost and Usage Report"
-        ],
-        correct: 1,
-        explanation: "AWS Pricing Calculator cho phép lập dự toán cấu hình và tính toán chi phí ước tính."
-      },
-      {
-        question: "Câu 58: Khái niệm Fault Tolerance (Khả năng chịu lỗi) có nghĩa là gì trong thiết kế hệ thống AWS?",
-        answers: [
-          "A. Hệ thống có thể mở rộng tài nguyên khi tải tăng cao.",
-          "B. Hệ thống tiếp tục hoạt động bình thường ngay cả khi một số thành phần phần cứng bị hỏng.",
-          "C. Hệ thống tự động sao lưu dữ liệu hàng ngày.",
-          "D. Hệ thống có chi phí vận hành thấp nhất."
-        ],
-        correct: 1,
-        explanation: "Fault Tolerance là khả năng duy trì hoạt động liên tục không gián đoạn kể cả khi xảy ra lỗi ở thành phần phần cứng/phần mềm."
-      } 
+  // ĐỀ TỔNG HỢP AWS (58 CÂU)
+  12: [
+    // ================= BỘ 1 (1 - 20) =================
+    {
+      q: "Câu 1: Yêu cầu IT nào sẽ khiến một kiến trúc sư lựa chọn mô hình dịch vụ điện toán đám mây Hạ tầng như một Dịch vụ (IaaS)?",
+      options: [
+        "Một công ty muốn chạy một instance được quản lý cho marketplace.",
+        "Một công ty muốn sử dụng giải pháp email trên nền tảng web.",
+        "Một công ty muốn duy trì mức độ linh hoạt cao nhất đối với các tài nguyên IT của mình.",
+        "Một công ty muốn duy trì quyền kiểm soát các ứng dụng của mình nhưng tránh việc bảo trì máy chủ và hệ điều hành."
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu 2: Lợi ích kinh tế theo quy mô (economies of scale) giúp ích như thế nào cho khách hàng chuyển từ điện toán tại chỗ (on-premises) sang điện toán đám mây?",
+      options: [
+        "Khách hàng có toàn quyền kiểm soát hạ tầng của họ.",
+        "Khách hàng có thể mở rộng máy chủ theo chiều ngang.",
+        "Khách hàng có thể đạt được chi phí biến đổi thấp hơn và mở rộng hạ tầng vượt quá khả năng tại chỗ.",
+        "Khách hàng có thể triển khai tài nguyên trên toàn cầu."
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu 3: Phát biểu nào mô tả chính xác cách khách hàng có thể sử dụng AWS Support?",
+      options: [
+        "Khách hàng có thể nhận AWS Support cho cả các tài khoản thử nghiệm phi sản xuất và các tài khoản sản xuất quan trọng đối với doanh nghiệp.",
+        "Khách hàng nên liên hệ với Support Concierge để nhận hỗ trợ kỹ thuật nhanh chóng và hiệu quả.",
+        "Khách hàng được gán một Quản lý Tài khoản Kỹ thuật (TAM) cho tất cả các gói AWS Support.",
+        "Khách hàng phải chọn một trong các gói hỗ trợ: Basic Support, Developer Support, Business Support, và Enterprise Support."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu 4: Phát biểu nào sau đây về AWS Regions là đúng?",
+      options: [
+        "Dữ liệu được lưu trữ trong một AWS Region không phải tuân theo các yêu cầu tuân thủ địa lý.",
+        "Tất cả các Region khả dụng đều được bật theo mặc định trong một tài khoản AWS.",
+        "Tất cả các tài khoản AWS đều có thể truy cập tất cả các AWS Region.",
+        "Việc sử dụng một Region càng gần người dùng càng tốt có thể làm giảm độ trễ."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu 5: Phát biểu nào về các chính sách (policies) AWS IAM là chính xác?",
+      options: [
+        "Các chính sách dựa trên định danh (Identity-based) chỉ có thể được gắn vào một thực thể duy nhất.",
+        "Các chính sách dựa trên tài nguyên (Resource-based) cho phép truy cập theo mặc định.",
+        "Access control lists (ACLs) là một dạng của chính sách dựa trên tài nguyên.",
+        "Các chính sách dựa trên định danh (Identity-based) được gắn vào user, group, hoặc role."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu 6: Phát biểu nào về bảo mật dữ liệu đang truyền (data in transit) là đúng?",
+      options: [
+        "TLS là một giao thức độc quyền được sử dụng để bảo mật lưu lượng giữa các AWS VPC.",
+        "Dữ liệu di chuyển giữa các dịch vụ AWS được mã hóa bằng TLS và AWS KMS.",
+        "Chứng chỉ TLS có thể được quản lý bằng AWS Certificate Manager (ACM).",
+        "Lưu lượng web chạy qua HTTP được mã hóa bằng TLS."
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu 7: Tùy chọn nào mô tả một khả năng của Amazon Virtual Private Clouds (VPCs)?",
+      options: [
+        "Chúng có thể trải rộng trên nhiều Availability Zones (AZs).",
+        "Chúng có thể thay đổi dải địa chỉ theo ý muốn sau khi tạo.",
+        "Chúng có thể được cấu hình như một phần độc lập về mặt vật lý của AWS Cloud.",
+        "Chúng có thể thuộc về nhiều AWS Region."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu 8: Cấu hình nào đại diện cho việc sử dụng hợp lệ các Security Groups trong một VPC?",
+      options: [
+        "Giới hạn truy cập đầu vào tới subnet riêng tư của VPC.",
+        "Đặt một quy tắc từ chối ngăn lưu lượng đi ra từ một EC2 instance.",
+        "Giới hạn lưu lượng đi ra từ một EC2 instance trong VPC tới một máy chủ cơ sở dữ liệu cụ thể.",
+        "Đặt một quy tắc từ chối ngăn truy cập vào subnet từ internet công cộng."
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu 9: Một lập trình viên đang kiểm thử một bản mẫu trên Amazon EC2. Các instance sẽ bị hủy sau khi kiểm thử, nhưng ứng dụng yêu cầu tính toán không bị gián đoạn trong khi xử lý. Loại giá Amazon EC2 instance nào đáp ứng nhu cầu với chi phí thấp nhất?",
+      options: [
+        "Scheduled Reserved Instance",
+        "Reserved Instance",
+        "On-Demand Instance",
+        "Spot Instance"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu 10: Security Groups đóng vai trò gì trong việc quản lý truy cập vào các Amazon EC2 instance?",
+      options: [
+        "Security Groups định nghĩa các IAM role có thể truy cập instance.",
+        "Security Groups cung cấp một tập hợp các quy tắc để kiểm soát lưu lượng đến hoặc đi từ một instance.",
+        "Security Groups xác định các khóa public và private cần thiết để kết nối với EC2 instance.",
+        "Security Groups kiểm soát truy cập đầu vào subnet mà EC2 liên kết."
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 11: Phát biểu nào về Amazon Elastic Block Store (Amazon EBS) là đúng?",
+      options: [
+        "Các ổ đĩa Amazon EBS tự động được nhân bản qua nhiều Availability Zones.",
+        "Các ổ đĩa Amazon EBS không được khuyến nghị cho lưu trữ yêu cầu cập nhật thường xuyên.",
+        "Các ổ đĩa Amazon EBS tồn tại độc lập với các Amazon EC2 instance mà chúng được gắn vào.",
+        "Các ổ đĩa Amazon EBS không thể thay đổi kích thước."
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu 12: Một công ty tải các biểu mẫu PDF lên Amazon S3 và phải lưu trữ trong 1 năm. Các biểu mẫu hiếm khi được truy cập sau 1 tuần, nhưng phải sẵn sàng trong vòng 1 ngày khi được yêu cầu. Chính sách vòng đời (lifecycle policy) nào tối ưu chi phí nhất?",
+      options: [
+        "Chuyển object từ S3 Standard-Infrequent Access sang S3 Standard sau 1 tuần.",
+        "Chuyển object từ S3 Standard sang S3 One Zone-IA sau 7 ngày. Xóa object sau 365 ngày.",
+        "Chuyển object từ S3 Standard sang S3 Standard-IA sau 7 ngày.",
+        "Chuyển object từ S3 Standard sang Amazon S3 Glacier sau 7 ngày. Xóa chúng sau 365 ngày."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu 13: Một công ty cần lưu trữ hàng tỷ sự kiện hàng ngày dung lượng nhỏ để phân tích. Tùy chọn lưu trữ nào phù hợp nhất cho trường hợp này?",
+      options: [
+        "Amazon Elastic Block Store (Amazon EBS)",
+        "Amazon S3",
+        "Amazon Elastic Container Service (Amazon ECS)",
+        "Amazon EC2 instance store"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 14: Tùy chọn nào là trách nhiệm của khách hàng khi chạy Amazon RDS?",
+      options: [
+        "Vá lỗi hệ điều hành",
+        "Cài đặt hệ điều hành",
+        "Tối ưu hóa ứng dụng",
+        "Vá lỗi phần mềm cơ sở dữ liệu"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu 15: Kịch bản nào mô tả đúng nhất trường hợp sử dụng cho Amazon Aurora?",
+      options: [
+        "Một công ty muốn chạy cơ sở dữ liệu Oracle trên đám mây.",
+        "Một công ty cần một cơ sở dữ liệu tương thích với PostgreSQL có tính sẵn sàng cao.",
+        "Một công ty cần một kho dữ liệu có thể truy vấn bằng các công cụ BI chuẩn.",
+        "Một công ty cần một cơ sở dữ liệu để lưu trữ dữ liệu bán cấu trúc."
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 16: Phát biểu nào phản ánh nguyên tắc thiết kế của trụ cột Bảo mật (Security) trong AWS Well-Architected Framework?",
+      options: [
+        "Đảm bảo nhân viên chủ động giám sát các rủi ro tiềm ẩn bằng tay.",
+        "Không triển khai giải pháp lên môi trường production cho đến khi chắc chắn không có rủi ro.",
+        "Phân tán quản lý quyền truy cập.",
+        "Áp dụng bảo mật ở tất cả các lớp của kiến trúc."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu 17: Loại cảnh báo nào có thể được cung cấp bởi AWS Trusted Advisor?",
+      options: [
+        "Cảnh báo rằng xác thực đa yếu tố (MFA) chưa được kích hoạt trên tài khoản AWS.",
+        "Cảnh báo về các cuộc gọi API bất thường trong tài khoản AWS.",
+        "Cảnh báo rằng một IAM user đã yêu cầu thay đổi quota dịch vụ.",
+        "Cảnh báo truy cập trái phép trong tài khoản AWS."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu 18: Kịch bản nào nên được xử lý bằng Network Load Balancer (NLB)?",
+      options: [
+        "Một giải pháp phải cân bằng tải các yêu cầu gRPC đến.",
+        "Một giải pháp phải cân bằng tải hàng triệu yêu cầu mỗi giây trong khi duy trì độ trễ cực thấp.",
+        "Một giải pháp phải định tuyến lưu lượng ở Tầng 7 của mô hình OSI.",
+        "Một giải pháp phải hỗ trợ định tuyến lưu lượng đến ứng dụng container dựa trên nội dung yêu cầu."
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 19: Phát biểu nào về AWS Auto Scaling là đúng?",
+      options: [
+        "AWS Auto Scaling có thể được sử dụng để tự động mở rộng các bảng và chỉ mục Amazon DynamoDB.",
+        "AWS Auto Scaling có thể được sử dụng để tự động mở rộng cơ sở dữ liệu Amazon RDS.",
+        "AWS Auto Scaling và Amazon EC2 Auto Scaling là hai khái niệm đồng nghĩa.",
+        "Bạn có thể sử dụng Amazon EC2 Auto Scaling hoặc AWS Auto Scaling, nhưng không thể dùng cả hai."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu 20: Thành phần nào phân phối lưu lượng ứng dụng đến nhiều mục tiêu như EC2 instances trên nhiều Availability Zones?",
+      options: [
+        "Amazon Route 53",
+        "Elastic Load Balancing (ELB)",
+        "AWS Auto Scaling",
+        "Amazon CloudFront"
+      ],
+      correct: [1]
+    },
+
+    // ================= BỘ 2 (21 - 30) =================
+    {
+      q: "Câu 21: Một ứng dụng web cần lưu trữ dữ liệu dạng key-value với độ trễ dưới 10 miligiây (single-digit millisecond latency). Dịch vụ cơ sở dữ liệu nào phù hợp nhất?",
+      options: [
+        "Amazon RDS",
+        "Amazon DynamoDB",
+        "Amazon Redshift",
+        "Amazon DocumentDB"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 22: Công ty muốn thiết lập kết nối mạng riêng biệt, chuyên dụng từ trung tâm dữ liệu tại chỗ (on-premises) đến AWS. Dịch vụ nào đáp ứng yêu cầu này?",
+      options: [
+        "AWS Client VPN",
+        "Amazon Route 53",
+        "AWS Direct Connect",
+        "AWS Transit Gateway"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu 23: Công ty muốn theo dõi, ghi lại và quản lý các cuộc gọi API liên quan đến tài khoản AWS của mình. Dịch vụ nào nên được sử dụng?",
+      options: [
+        "Amazon CloudWatch",
+        "AWS CloudTrail",
+        "AWS Config",
+        "AWS Trusted Advisor"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 24: Dịch vụ nào của AWS cung cấp khả năng phân phối nội dung toàn cầu (CDN) giúp tăng tốc độ tải trang web cho người dùng cuối?",
+      options: [
+        "Amazon Route 53",
+        "Amazon CloudFront",
+        "AWS Global Accelerator",
+        "Amazon S3 Glacier"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 25: Mô hình trách nhiệm chung (Shared Responsibility Model) quy định trách nhiệm nào thuộc về AWS?",
+      options: [
+        "Mã hóa dữ liệu lưu trữ phía khách hàng (Client-side data encryption)",
+        "Quản lý quyền IAM và mật khẩu người dùng",
+        "Bảo vệ hạ tầng vật lý của các Trung tâm dữ liệu (Data Centers)",
+        "Vá lỗi hệ điều hành trên các máy chủ EC2"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu 26: Công ty muốn triển khai ứng dụng mà không cần quản lý máy chủ, tự động mở rộng theo lưu lượng truy cập. Dịch vụ máy chủ ảo Serverless nào phù hợp?",
+      options: [
+        "Amazon EC2",
+        "Amazon ECS",
+        "AWS Lambda",
+        "AWS Fargate"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu 27: Dịch vụ nào giúp dự đoán và quản lý chi phí AWS bằng cách gửi thông báo khi chi phí vượt ngưỡng ngân sách đặt trước?",
+      options: [
+        "AWS Cost Explorer",
+        "AWS Budgets",
+        "AWS Pricing Calculator",
+        "AWS Organizations"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 28: Để kết nối nhiều Amazon VPC và mạng tại chỗ (on-premises) lại với nhau thông qua một hub trung tâm, bạn nên dùng dịch vụ nào?",
+      options: [
+        "VPC Peering",
+        "AWS Direct Connect",
+        "AWS Transit Gateway",
+        "Internet Gateway"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu 29: Dịch vụ lưu trữ tệp tin nào của AWS hỗ trợ chuẩn giao thức POSIX cho phép nhiều EC2 instance truy cập đồng thời?",
+      options: [
+        "Amazon EBS",
+        "Amazon EFS",
+        "Amazon S3",
+        "Amazon EC2 Instance Store"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 30: Công ty muốn lưu trữ khối lượng lớn dữ liệu phân tích cấu trúc lớn (Data Warehouse) để thực hiện các truy vấn phức tạp. Dịch vụ nào phù hợp?",
+      options: [
+        "Amazon DynamoDB",
+        "Amazon ElastiCache",
+        "Amazon Redshift",
+        "Amazon Aurora"
+      ],
+      correct: [2]
+    },
+
+    // ================= BỘ 3 (31 - 40) =================
+    {
+      q: "Câu 31: Khái niệm \"Elasticity\" (Tính co giãn) trên điện toán đám mây AWS được hiểu là gì?",
+      options: [
+        "Khả năng tự động tăng/giảm tài nguyên dựa trên nhu cầu thực tế.",
+        "Khả năng chịu lỗi và tự phục hồi khi hệ thống gặp sự cố.",
+        "Khả năng mở rộng dung lượng máy chủ lên mức tối đa ngay từ đầu.",
+        "Khả năng di chuyển ứng dụng giữa các đám mây khác nhau."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu 32: Khách hàng muốn đảm bảo tính sẵn sàng cao (High Availability) cho ứng dụng trên EC2. Lựa chọn kiến trúc nào là tốt nhất?",
+      options: [
+        "Triển khai EC2 trên một Availability Zone đơn lẻ.",
+        "Triển khai EC2 trên nhiều Availability Zones (Multi-AZ) trong cùng một Region.",
+        "Triển khai EC2 trên nhiều tài khoản AWS khác nhau.",
+        "Đặt EC2 trong các Subnet riêng tư (Private Subnet) khác nhau."
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 33: Dịch vụ nào cung cấp khả năng quét lỗ hổng bảo mật tự động trên các Amazon EC2 instance và container image?",
+      options: [
+        "AWS Shield",
+        "AWS WAF",
+        "Amazon Inspector",
+        "Amazon GuardDuty"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu 34: Công cụ nào cho phép người dùng viết mã hạ tầng dạng khai báo (Infrastructure as Code - IaC) để tự động hóa việc tạo tài nguyên AWS?",
+      options: [
+        "AWS OpsWorks",
+        "AWS CloudFormation",
+        "AWS Systems Manager",
+        "AWS CodeDeploy"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 35: Để cấu hình quy tắc chặn các cuộc tấn công phổ biến như SQL Injection hoặc Cross-Site Scripting (XSS) trên web application, dịch vụ nào được dùng?",
+      options: [
+        "AWS Shield Advanced",
+        "AWS WAF (Web Application Firewall)",
+        "Security Groups",
+        "Network ACLs"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 36: Dịch vụ nào cung cấp bộ lưu trữ tạm thời tốc độ cao gắn trực tiếp vào máy chủ vật lý chứa EC2 instance (Ephemeral Storage)?",
+      options: [
+        "Amazon EBS",
+        "EC2 Instance Store",
+        "Amazon EFS",
+        "Amazon S3"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 37: Dịch vụ AWS nào quản lý khóa mã hóa và giúp mã hóa dữ liệu trên các dịch vụ khác của AWS?",
+      options: [
+        "AWS Certificate Manager (ACM)",
+        "AWS Key Management Service (AWS KMS)",
+        "AWS Secrets Manager",
+        "AWS IAM"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 38: Khi chọn mua EC2 Instance với cam kết sử dụng liên tục 1 hoặc 3 năm để nhận chi phí ưu đãi lớn nhất, loại hình thanh toán nào nên chọn?",
+      options: [
+        "On-Demand Instances",
+        "Reserved Instances hoặc Savings Plans",
+        "Spot Instances",
+        "Dedicated Hosts"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 39: Dịch vụ nào giúp tập trung quản lý nhiều tài khoản AWS và thiết lập quản trị chung cho toàn tổ chức?",
+      options: [
+        "AWS IAM",
+        "AWS Organizations",
+        "AWS Control Tower",
+        "AWS Config"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 40: Trong VPC, Network Access Control List (NACL) hoạt động như thế nào so với Security Group?",
+      options: [
+        "NACL kiểm soát ở cấp độ Instance, Security Group kiểm soát ở cấp độ Subnet.",
+        "NACL hoạt động ở cấp độ Subnet và hỗ trợ cả quy tắc Allow và Deny.",
+        "NACL là Stateful, Security Group là Stateless.",
+        "NACL chỉ áp dụng cho lưu lượng đi ra (outbound)."
+      ],
+      correct: [1]
+    },
+
+    // ================= BỘ 4 (41 - 50) =================
+    {
+      q: "Câu 41: Dịch vụ nào cho phép lưu trữ bộ nhớ đệm (Caching) trong bộ nhớ (In-memory) để tăng tốc độ phản hồi cho cơ sở dữ liệu quan hệ?",
+      options: [
+        "Amazon DynamoDB Accelerator (DAX)",
+        "Amazon ElastiCache",
+        "Amazon CloudFront",
+        "Amazon Redshift"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 42: Để triển khai ứng dụng container hóa mà không cần quản lý máy chủ bên dưới, bạn nên chọn sự kết hợp nào?",
+      options: [
+        "Amazon EC2 và Amazon ECS",
+        "Amazon ECS (hoặc EKS) kết hợp với AWS Fargate",
+        "AWS Lambda và Amazon S3",
+        "EC2 Auto Scaling và Elastic Load Balancer"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 43: Dịch vụ nào giúp gửi tin nhắn thông báo (Push notification/Email/SMS) theo mô hình Publisher/Subscriber?",
+      options: [
+        "Amazon SQS",
+        "Amazon SNS (Simple Notification Service)",
+        "AWS SES",
+        "Amazon EventBridge"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 44: Dịch vụ hàng đợi tin nhắn (Message Queue) giúp phân tách (decouple) các thành phần trong ứng dụng dạng microservices là gì?",
+      options: [
+        "Amazon SQS (Simple Queue Service)",
+        "Amazon SNS",
+        "Amazon Kinesis",
+        "AWS Step Functions"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu 45: Phát biểu nào đúng về AWS Edge Locations?",
+      options: [
+        "Là nơi đặt các trung tâm dữ liệu chính chứa dịch vụ EC2 và RDS.",
+        "Là các điểm hiện diện trên toàn cầu được dùng bởi CloudFront để cache nội dung gần người dùng.",
+        "Là các vùng độc lập trong một AWS Region.",
+        "Là các máy chủ chuyên dụng đặt tại văn phòng khách hàng."
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 46: Công cụ nào hỗ trợ phân tích lịch sử thay đổi cấu hình tài nguyên AWS và kiểm tra tuân thủ chính sách?",
+      options: [
+        "AWS CloudTrail",
+        "AWS Config",
+        "AWS Trusted Advisor",
+        "AWS Artifact"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 47: Dịch vụ nào cung cấp các báo cáo tuân thủ bảo mật và thỏa thuận pháp lý của AWS cho khách hàng tải về?",
+      options: [
+        "AWS KMS",
+        "AWS Artifact",
+        "AWS Shield",
+        "AWS Security Hub"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 48: Thành phần nào trong VPC cho phép các EC2 instance nằm trong Private Subnet kết nối ra Internet để cập nhật phần mềm nhưng ngăn Internet kết nối chủ động vào?",
+      options: [
+        "Internet Gateway (IGW)",
+        "NAT Gateway",
+        "Egress-Only Internet Gateway",
+        "VPC Peering"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 49: Dịch vụ DNS (Domain Name System) nào của AWS giúp định tuyến người dùng đến các ứng dụng web với độ sẵn sàng cao?",
+      options: [
+        "Amazon Route 53",
+        "AWS Direct Connect",
+        "Amazon CloudFront",
+        "AWS Global Accelerator"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu 50: Trụ cột nào trong AWS Well-Architected Framework tập trung vào việc chạy khối lượng công việc hiệu quả, cải tiến liên tục quy trình và duy trì giá trị kinh doanh?",
+      options: [
+        "Operational Excellence (Vận hành xuất sắc)",
+        "Performance Efficiency (Hiệu năng hoạt động)",
+        "Cost Optimization (Tối ưu chi phí)",
+        "Reliability (Độ tin cậy)"
+      ],
+      correct: [0]
+    },
+
+    // ================= BỘ 5 (51 - 58) =================
+    {
+      q: "Câu 51: Khi sử dụng AWS, mô hình chi phí nào áp dụng cho hầu hết các dịch vụ tính toán và lưu trữ?",
+      options: [
+        "Trả tiền cố định hàng tháng (Flat monthly rate)",
+        "Trả tiền theo dung lượng/thời gian thực tế sử dụng (Pay-as-you-go)",
+        "Trả tiền cấp bản quyền cố định (Upfront licensing fee)",
+        "Miễn phí hoàn toàn các tài nguyên cơ bản"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 52: Dịch vụ nào giúp tự động chuyển đổi định dạng phương tiện (video/audio) sang các định dạng tương thích với nhiều thiết bị?",
+      options: [
+        "Amazon Rekognition",
+        "AWS Elemental MediaConvert",
+        "Amazon Polly",
+        "Amazon Transcribe"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 53: Để bảo vệ ứng dụng web khỏi các cuộc tấn công Từ chối dịch vụ phân tán (DDoS) cấp độ mạng (Layer 3 và Layer 4), dịch vụ nào được tự động tích hợp mặc định?",
+      options: [
+        "AWS Shield Standard",
+        "AWS WAF",
+        "Security Groups",
+        "Amazon GuardDuty"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu 54: Dịch vụ nào là một kho lưu trữ mã nguồn Git được quản lý hoàn toàn bởi AWS?",
+      options: [
+        "AWS CodePipeline",
+        "AWS CodeBuild",
+        "AWS CodeCommit",
+        "AWS CodeDeploy"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu 55: Dịch vụ nào hỗ trợ phát hiện các mối đe dọa bảo mật thông qua việc liên tục phân tích dữ liệu log (CloudTrail, VPC Flow Logs, DNS Logs) bằng Machine Learning?",
+      options: [
+        "Amazon GuardDuty",
+        "Amazon Macie",
+        "AWS Security Hub",
+        "Amazon Inspector"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu 56: Dịch vụ nào tự động phát hiện, phân loại và bảo vệ dữ liệu nhạy cảm (như thông tin cá nhân PII, số thẻ tín dụng) lưu trữ trên Amazon S3?",
+      options: [
+        "Amazon GuardDuty",
+        "Amazon Macie",
+        "AWS KMS",
+        "AWS Inspector"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 57: Công cụ trực quan nào giúp ước tính chi phí hàng tháng cho các dịch vụ AWS trước khi triển khai hệ thống?",
+      options: [
+        "AWS Cost Explorer",
+        "AWS Pricing Calculator",
+        "AWS Budgets",
+        "AWS Cost and Usage Report"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu 58: Khái niệm \"Fault Tolerance\" (Khả năng chịu lỗi) có nghĩa là gì trong thiết kế hệ thống AWS?",
+      options: [
+        "Hệ thống có thể mở rộng tài nguyên khi tải tăng cao.",
+        "Hệ thống tiếp tục hoạt động bình thường ngay cả khi một số thành phần phần cứng bị hỏng.",
+        "Hệ thống tự động sao lưu dữ liệu hàng ngày.",
+        "Hệ thống có chi phí vận hành thấp nhất."
+      ],
+      correct: [1]
+    }
   ]
 };
