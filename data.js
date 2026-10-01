@@ -3710,7 +3710,7 @@ const examsData = {
         "Một hệ thống có thể cung cấp chức năng dự kiến khi người dùng yêu cầu.",
         "Đó là xác suất toàn bộ hệ thống của bạn sẽ hoạt động như dự kiến trong một khoảng thời gian xác định."
       ],
-      correct: [3]
+      correct: [2]
     },
     {
       q: "Câu hỏi 19: Thông tin nào BẮT BUỘC phải được cấu hình cho các thể hiện Amazon EC2 sẽ là một phần của nhóm Amazon EC2 Auto Scaling? (Chọn HAI)",
@@ -3731,7 +3731,7 @@ const examsData = {
         "Kích thước của nhóm Amazon EC2 Auto Scaling sẽ tự động tăng và giảm dựa trên cấu hình của nó và số lượng thể hiện không thể điều chỉnh thủ công.",
         "Amazon EC2 Auto Scaling hữu ích cho khối lượng công việc có thể dự đoán được."
       ],
-      correct: [0]
+      correct: [3]
     },
     {
       q: "Câu hỏi 21: Yêu cầu CNTT nào sẽ khiến kiến trúc sư chọn mô hình dịch vụ đám mây Hạ tầng như một dịch vụ (IaaS)?",
@@ -3793,7 +3793,7 @@ const examsData = {
         "Lưu lượng web chạy qua HTTP được mã hóa bằng TLS.",
         "TLS cung cấp khả năng mã hóa dữ liệu đang truyền tải."
       ],
-      correct: [3, 4]
+      correct: [2, 4]
     },
     {
       q: "Câu hỏi 27: Tùy chọn nào mô tả một khả năng của Amazon Virtual Private Clouds (VPCs)?",
@@ -3954,7 +3954,7 @@ const examsData = {
         "Khách hàng được chỉ định một Quản lý tài khoản kỹ thuật (TAM) cho tất cả các gói AWS Support.",
         "Khách hàng phải chọn một trong ba gói hỗ trợ: Basic Support, Business Support, và Enterprise Support."
       ],
-      correct: [3]
+      correct: [0]
     },
     {
       q: "Câu hỏi 43: Phát biểu nào về các vị trí biên (edge locations) là đúng?",
@@ -4089,12 +4089,12 @@ const examsData = {
     {
       q: "Câu hỏi 56: Phát biểu nào mô tả tính sẵn sàng cao (high availability)?",
       options: [
-        "Đó là xác suất toàn bộ hệ thống của bạn sẽ hoạt động như dự kiến trong một khoảng thời gian xác định.",
-        "Đó là thước đo tổng thời gian phục vụ chia cho số lần thất bại.",
+        "Đó là xác suất toàn bộ hệ thống của bạn sẽ hoạt động như dự kiến trong một khoảng thời gian xác định.(độ tin cậy)",
+        "Đó là thước đo tổng thời gian phục vụ chia cho số lần thất bại.(thc đo mtbf đo lg độ tin cậy)",
         "Một hệ thống có thể cung cấp chức năng dự kiến khi người dùng yêu cầu.",
-        "Một hệ thống có thể chịu đựng một mức độ suy giảm nhất định mà không bị ngừng hoạt động."
+        "Một hệ thống có thể chịu đựng một mức độ suy giảm nhất định mà không bị ngừng hoạt động.(chịu lỗi)"
       ],
-      correct: [0]
+      correct: [2]
     },
     {
       q: "Câu hỏi 57: Một công ty có một ứng dụng đang chạy trên hai thể hiện Amazon EC2. Họ muốn giảm dung lượng EC2 nhàn rỗi. Tải ứng dụng rất khó dự báo và họ muốn giữ mức sử dụng CPU gần 40 phần trăm trên tất cả các thể hiện. Họ nên cấu hình loại Amazon EC2 Auto Scaling nào?",
@@ -4114,7 +4114,7 @@ const examsData = {
         "Kích thước của nhóm Amazon EC2 Auto Scaling sẽ tự động tăng và giảm dựa trên cấu hình của nó và số lượng thể hiện không thể điều chỉnh thủ công.",
         "Amazon EC2 Auto Scaling hữu ích cho khối lượng công việc có thể dự đoán được."
       ],
-      correct: [2]
+      correct: [3]
     }
   ]  
 };
