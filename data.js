@@ -4116,5 +4116,1007 @@ const examsData = {
       ],
       correct: [3]
     }
+  ],
+  14: [
+    {
+      q: "Câu hỏi 1: Phát biểu nào sau đây là một ưu điểm của mô hình dịch vụ điện toán đám mây Nền tảng như một dịch vụ (PaaS)?",
+      options: [
+        "PaaS giống nhất với các mô hình tại chỗ (on-premises) truyền thống đối với các tài nguyên CNTT.",
+        "PaaS cung cấp mức độ kiểm soát cao nhất đối với các tài nguyên CNTT.",
+        "PaaS làm giảm nhu cầu xử lý triển khai ứng dụng.",
+        "PaaS giúp tránh được nhu cầu phải quản lý các hệ điều hành."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 2: Điện toán đám mây cải thiện khả năng cấp phát tài nguyên của doanh nghiệp nhằm đáp ứng nhu cầu năng lực như thế nào so với điện toán tại chỗ?",
+      options: [
+        "Tài nguyên đám mây có thể được khóa ở cấp độ tài nguyên.",
+        "Tài nguyên đám mây có thể dự báo được chi phí.",
+        "Tài nguyên đám mây có thể trải qua các đỉnh và đáy trong quá trình sử dụng.",
+        "Tài nguyên đám mây có thể tự động tăng hoặc giảm quy mô tùy theo nhu cầu."
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 3: Dịch vụ nào của AWS cung cấp khả năng tự động phân phối lưu lượng ứng dụng đến nhiều mục tiêu như các thể hiện Amazon EC2?",
+      options: [
+        "AWS Auto Scaling",
+        "Elastic Load Balancing (ELB)",
+        "Amazon Route 53",
+        "Amazon CloudFront"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 4: Theo Mô hình Trách nhiệm Chung của AWS (AWS Shared Responsibility Model), đâu là trách nhiệm thuộc về phía AWS?",
+      options: [
+        "Cấu hình tường lửa Security Group",
+        "Bảo vệ hạ tầng vật lý của các trung tâm dữ liệu",
+        "Mã hóa dữ liệu phía người dùng",
+        "Quản lý phân quyền IAM người dùng"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 5: Dịch vụ lưu trữ đối tượng (object storage) nào của AWS cung cấp độ tin cậy 99.999999999% (11 số 9)?",
+      options: [
+        "Amazon EBS",
+        "Amazon EFS",
+        "Amazon S3",
+        "Amazon EC2 Instance Store"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 6: Tính năng nào giúp gom nhóm và thanh toán hợp nhất cho nhiều tài khoản AWS trong cùng một tổ chức?",
+      options: [
+        "AWS Cost Explorer",
+        "AWS Budgets",
+        "AWS Organizations (Consolidated Billing)",
+        "AWS Trusted Advisor"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 7: Khái niệm 'Edge Location' trong hạ tầng toàn cầu của AWS chủ yếu phục vụ cho dịch vụ nào?",
+      options: [
+        "Amazon EC2",
+        "Amazon CloudFront",
+        "Amazon RDS",
+        "AWS Lambda"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 8: Loại lưu trữ khối (block storage) nào được thiết kế để gắn trực tiếp vào một thể hiện Amazon EC2 giống như một ổ đĩa cứng vật lý?",
+      options: [
+        "Amazon S3",
+        "Amazon EBS",
+        "Amazon Glacier",
+        "AWS Snowball"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 9: Dịch vụ cơ sở dữ liệu quan hệ được quản lý hoàn toàn bởi AWS là dịch vụ nào?",
+      options: [
+        "Amazon DynamoDB",
+        "Amazon RDS",
+        "Amazon Redshift",
+        "Amazon ElastiCache"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 10: Dịch vụ tính toán không máy chủ (serverless) cho phép chạy mã mà không cần quản lý máy chủ là dịch vụ nào?",
+      options: [
+        "Amazon EC2",
+        "AWS Fargate",
+        "AWS Lambda",
+        "Amazon Lightsail"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 11: Dịch vụ nào theo dõi và ghi lại các hoạt động gọi API cũng như hành động của người dùng trong tài khoản AWS?",
+      options: [
+        "Amazon CloudWatch",
+        "AWS CloudTrail",
+        "AWS Config",
+        "AWS Trusted Advisor"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 12: Để cấp quyền truy cập tạm thời cho một dịch vụ AWS hoặc người dùng bên ngoài, bạn nên sử dụng thành phần IAM nào?",
+      options: [
+        "IAM User",
+        "IAM Group",
+        "IAM Role",
+        "IAM Policy"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 13: Dịch vụ DNS có khả năng mở rộng cao và phản hồi độ trễ thấp của AWS là gì?",
+      options: [
+        "Amazon Route 53",
+        "AWS Direct Connect",
+        "Amazon VPC",
+        "AWS Transit Gateway"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 14: Lợi ích kinh tế 'Trade capital expense for variable expense' nghĩa là gì?",
+      options: [
+        "Trả chi phí cố định lớn trước khi sử dụng tài nguyên.",
+        "Thay chi phí đầu tư hạ tầng ban đầu bằng việc chỉ trả cho những gì bạn thực sự dùng.",
+        "Chi phí điện toán sẽ tăng cố định theo từng năm.",
+        "Khách hàng phải tự duy trì máy chủ vật lý."
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 15: Trụ cột nào trong AWS Well-Architected Framework tập trung vào việc bảo vệ thông tin và tài sản?",
+      options: [
+        "Operational Excellence",
+        "Security",
+        "Reliability",
+        "Performance Efficiency"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 16: Một AWS Region bao gồm tối thiểu bao nhiêu Availability Zones (AZs)?",
+      options: [
+        "1",
+        "2",
+        "3",
+        "6"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 17: Công cụ nào giúp kiểm tra tài khoản AWS để đưa ra các khuyến nghị về tối ưu chi phí, hiệu năng và bảo mật?",
+      options: [
+        "AWS Trusted Advisor",
+        "AWS Shield",
+        "AWS Artifact",
+        "AWS Systems Manager"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 18: Tùy chọn mua EC2 Instance nào cung cấp mức giảm giá cao nhất (lên đến 90%) nhưng có thể bị AWS ngắt bất kỳ lúc nào?",
+      options: [
+        "On-Demand Instances",
+        "Reserved Instances",
+        "Savings Plans",
+        "Spot Instances"
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 19: Dịch vụ nào cho phép tạo một mạng ảo độc lập hoàn toàn trên đám mây AWS?",
+      options: [
+        "Amazon VPC",
+        "AWS Direct Connect",
+        "Amazon Route 53",
+        "AWS VPN"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 20: Thiết bị lưu trữ vật lý nào của AWS giúp di chuyển lượng dữ liệu khổng lồ (vài chục Terabyte đến Petabyte) vào đám mây?",
+      options: [
+        "AWS Storage Gateway",
+        "AWS Snowball",
+        "Amazon S3 Glacier",
+        "AWS Direct Connect"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 21: Dịch vụ cơ sở dữ liệu NoSQL nhanh, linh hoạt và được quản lý hoàn toàn bởi AWS là dịch vụ nào?",
+      options: [
+        "Amazon RDS",
+        "Amazon Aurora",
+        "Amazon DynamoDB",
+        "Amazon Redshift"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 22: Dịch vụ kho dữ liệu (Data Warehouse) cho phân tích quy mô Petabyte trên AWS là gì?",
+      options: [
+        "Amazon Redshift",
+        "Amazon Athena",
+        "Amazon EMR",
+        "Amazon ElastiCache"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 23: Thành phần nào trong Amazon VPC hoạt động như một tường lửa cho phép/chặn lưu lượng ở cấp độ Thể hiện EC2 (Instance level)?",
+      options: [
+        "Network ACL (NACL)",
+        "Security Group",
+        "Internet Gateway",
+        "Route Table"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 24: Thành phần nào trong Amazon VPC hoạt động như tường lửa không lưu trạng thái (stateless) ở cấp độ Subnet?",
+      options: [
+        "Security Group",
+        "Network ACL (NACL)",
+        "NAT Gateway",
+        "VPC Peering"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 25: Dịch vụ nào giúp kết nối trực tiếp, riêng tư giữa mạng On-premises của doanh nghiệp và AWS VPC mà không qua Internet?",
+      options: [
+        "AWS Site-to-Site VPN",
+        "AWS Direct Connect",
+        "Amazon CloudFront",
+        "AWS Transit Gateway"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 26: Lớp lưu trữ Amazon S3 nào tiết kiệm chi phí nhất cho dữ liệu truy cập không thường xuyên nhưng vẫn yêu cầu truy xuất ngay trong vài miligiây?",
+      options: [
+        "Amazon S3 Standard",
+        "Amazon S3 Standard-IA",
+        "Amazon S3 Glacier Flexible Retrieval",
+        "Amazon S3 Glacier Deep Archive"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 27: Dịch vụ nào cho phép chạy các container Docker mà không cần phải quản lý hạ tầng máy chủ EC2 bên dưới?",
+      options: [
+        "Amazon ECS với AWS Fargate",
+        "Amazon EC2",
+        "AWS Elastic Beanstalk",
+        "Amazon ECR"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 28: Dịch vụ nào được sử dụng để phát hiện và ngăn chặn các cuộc tấn công từ chối dịch vụ (DDoS) trên AWS?",
+      options: [
+        "AWS WAF",
+        "AWS Shield",
+        "AWS Inspector",
+        "AWS GuardDuty"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 29: Dịch vụ WAF (Web Application Firewall) của AWS giúp bảo vệ ứng dụng khỏi nguy cơ nào sau đây?",
+      options: [
+        "Tấn công vật lý vào máy chủ",
+        "Tấn công SQL Injection và Cross-Site Scripting (XSS)",
+        "Thiên tai gây mất điện center",
+        "Rò rỉ mật khẩu người dùng IAM"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 30: Nơi lưu trữ và truy xuất các báo cáo tuân thủ (compliance reports) cũng như các thỏa thuận bảo mật của AWS là gì?",
+      options: [
+        "AWS Systems Manager",
+        "AWS Artifact",
+        "AWS Secrets Manager",
+        "AWS Security Hub"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 31: Dịch vụ giám sát thông số tài nguyên (metrics), nhật ký (logs) và thiết lập cảnh báo (alerts) trên AWS là gì?",
+      options: [
+        "AWS CloudTrail",
+        "Amazon CloudWatch",
+        "AWS Config",
+        "AWS X-Ray"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 32: Dịch vụ PaaS nào của AWS giúp nhà phát triển dễ dàng triển khai ứng dụng web mà chỉ cần tải code lên?",
+      options: [
+        "AWS Elastic Beanstalk",
+        "Amazon EC2",
+        "AWS OpsWorks",
+        "AWS CodeDeploy"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 33: Để lưu trữ hệ thống tệp chia sẻ (NFS) có thể gắn đồng thời vào nhiều EC2 Linux instances, bạn chọn dịch vụ nào?",
+      options: [
+        "Amazon EBS",
+        "Amazon S3",
+        "Amazon EFS",
+        "Amazon EC2 Instance Store"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 34: Trụ cột nào trong Well-Architected Framework nhấn mạnh việc chạy khối lượng công việc với chi phí thấp nhất?",
+      options: [
+        "Cost Optimization",
+        "Operational Excellence",
+        "Reliability",
+        "Performance Efficiency"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 35: Khái niệm 'Agility' (Sự linh hoạt) trong điện toán đám mây đề cập đến điều gì?",
+      options: [
+        "Khả năng mở rộng dung lượng lên quy mô toàn cầu.",
+        "Khả năng thử nghiệm và triển khai tài nguyên mới chỉ trong vài phút.",
+        "Khả năng tự động khôi phục sau sự cố.",
+        "Khả năng thanh toán theo tháng."
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 36: Dịch vụ nào quản lý khóa mã hóa (encryption keys) một cách an toàn trên AWS?",
+      options: [
+        "AWS Secrets Manager",
+        "AWS Key Management Service (KMS)",
+        "AWS Certificate Manager (ACM)",
+        "AWS IAM"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 37: Thiết bị phần cứng nào cho phép Subnet riêng (Private Subnet) kết nối ra Internet nhưng chặn Internet khởi tạo kết nối vào?",
+      options: [
+        "Internet Gateway",
+        "NAT Gateway",
+        "VPC Peering",
+        "Egress-Only Internet Gateway"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 38: Dịch vụ lưu trữ lưu đệm (In-memory caching) giúp tăng tốc độ truy vấn cơ sở dữ liệu trên AWS là gì?",
+      options: [
+        "Amazon DynamoDB Accelerator (DAX) / ElastiCache",
+        "Amazon RDS",
+        "Amazon Redshift",
+        "Amazon DocumentDB"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 39: Khi sử dụng Amazon EC2, khách hàng có trách nhiệm thực hiện công việc nào sau đây?",
+      options: [
+        "Thay thế ổ cứng vật lý bị hỏng",
+        "Vá lỗi hệ điều hành (OS patching) cài trên EC2",
+        "Bảo trì thiết bị mạng phần cứng",
+        "Cập nhật Hypervisor"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 40: Công cụ dự báo chi phí và phân tích xu hướng chi phí đám mây theo thời gian của AWS là gì?",
+      options: [
+        "AWS Pricing Calculator",
+        "AWS Cost Explorer",
+        "AWS Budgets",
+        "AWS TCO Calculator"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 41: Phương thức thanh toán nào áp dụng cho hầu hết các dịch vụ AWS?",
+      options: [
+        "Trả trước cố định theo năm",
+        "Trả tiền theo mức độ sử dụng (Pay-as-you-go)",
+        "Đóng phí cấp phép phần mềm hàng tháng",
+        "Gói cước cố định không giới hạn"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 42: Lợi ích của việc triển khai ứng dụng trên nhiều Availability Zones (Multi-AZ) là gì?",
+      options: [
+        "Giảm chi phí lưu trữ",
+        "Tăng tính sẵn sàng cao (High Availability) và khả năng chịu lỗi (Fault Tolerance)",
+        "Tự động viết lại mã nguồn ứng dụng",
+        "Tăng tốc độ truy cập Internet của người dùng"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 43: Dịch vụ nào quản lý chứng chỉ SSL/TLS miễn phí cho các ứng dụng AWS?",
+      options: [
+        "AWS KMS",
+        "AWS Certificate Manager (ACM)",
+        "AWS Secrets Manager",
+        "AWS IAM"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 44: Dịch vụ cảnh báo thông minh dựa trên học máy để phát hiện các mối đe dọa an ninh trong tài khoản AWS là gì?",
+      options: [
+        "AWS GuardDuty",
+        "AWS Inspector",
+        "AWS Shield",
+        "AWS WAF"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 45: Dịch vụ quét lỗ hổng bảo mật tự động cho các thể hiện Amazon EC2 và container images là gì?",
+      options: [
+        "AWS GuardDuty",
+        "Amazon Inspector",
+        "AWS Security Hub",
+        "AWS Macie"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 46: Dịch vụ tự động phát hiện và bảo vệ dữ liệu nhạy cảm (như thông tin cá nhân PII) lưu trên Amazon S3 bằng AI là gì?",
+      options: [
+        "Amazon Macie",
+        "AWS KMS",
+        "AWS Shield",
+        "AWS GuardDuty"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 47: Trong dịch vụ Amazon S3, loại lưu trữ nào tự động chuyển đổi dữ liệu giữa các tầng lưu trữ dựa trên tần suất truy cập để tối ưu chi phí?",
+      options: [
+        "S3 Standard",
+        "S3 Intelligent-Tiering",
+        "S3 Glacier Flexible Retrieval",
+        "S3 Outposts"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 48: Gói AWS Support Plan nào cung cấp sự hỗ trợ của Quản lý Tài khoản Kỹ thuật (TAM - Technical Account Manager)?",
+      options: [
+        "Basic Support",
+        "Developer Support",
+        "Business Support",
+        "Enterprise Support"
+      ],
+      correct: [3]
+    },
+    {
+      q: "Câu hỏi 49: Thời gian phản hồi cam kết cho sự cố gián đoạn hệ thống nghiêm trọng (Business Critical System Down) ở gói Enterprise Support là bao lâu?",
+      options: [
+        "Dưới 15 phút",
+        "Dưới 1 giờ",
+        "Dưới 4 giờ",
+        "Trong vòng 24 giờ"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 50: Dịch vụ tin nhắn theo mô hình Publish/Subscribe (Pub/Sub) của AWS là dịch vụ nào?",
+      options: [
+        "Amazon SQS",
+        "Amazon SNS",
+        "Amazon SES",
+        "AWS Step Functions"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 51: Dịch vụ hàng đợi tin nhắn (Message Queue) giúp giải mã nối (decouple) các thành phần ứng dụng là dịch vụ nào?",
+      options: [
+        "Amazon SNS",
+        "Amazon SQS",
+        "Amazon MQ",
+        "AWS Kinesis"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 52: Chiến lược di chuyển ứng dụng lên đám mây theo cách 'Rehosting' còn được gọi là gì?",
+      options: [
+        "Lift and Shift",
+        "Replatforming",
+        "Refactoring",
+        "Repurchasing"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 53: Dịch vụ nào quản lý lịch sử thay đổi cấu hình tài nguyên AWS và kiểm tra sự tuân thủ quy tắc?",
+      options: [
+        "AWS CloudTrail",
+        "AWS Config",
+        "Amazon CloudWatch",
+        "AWS Systems Manager"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 54: Khái niệm 'Elasticity' (Tính co giãn) thể hiện ở khả năng nào của đám mây?",
+      options: [
+        "Cung cấp tài nguyên đúng mức dung lượng cần thiết tại mọi thời điểm.",
+        "Duy trì một số lượng máy chủ cố định.",
+        "Khả năng thanh toán chi phí trả trước.",
+        "Mở rộng hệ thống ra nhiều quốc gia."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 55: Dịch vụ nào cho phép tạo môi trường ảo hóa dạng máy tính để bàn (Desktop-as-a-Service) cho người dùng cuối?",
+      options: [
+        "Amazon AppStream 2.0",
+        "Amazon WorkSpaces",
+        "Amazon Connect",
+        "Amazon EC2"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 56: Dịch vụ nào hỗ trợ tìm kiếm và mua các giải pháp phần mềm của bên thứ ba chạy trên AWS?",
+      options: [
+        "AWS Partner Network",
+        "AWS Marketplace",
+        "AWS Service Catalog",
+        "AWS Artifact"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 57: Tính năng nào của AWS Organizations giúp áp dụng chính sách giới hạn quyền truy cập ở cấp độ tài khoản (Account level)?",
+      options: [
+        "IAM Group Policy",
+        "Service Control Policies (SCPs)",
+        "Access Control Lists (ACLs)",
+        "Security Groups"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 58: Công cụ Infra-as-Code (IaC) native của AWS giúp định nghĩa hạ tầng bằng tệp JSON/YAML là gì?",
+      options: [
+        "AWS Elastic Beanstalk",
+        "AWS CloudFormation",
+        "AWS OpsWorks",
+        "AWS CDK"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 59: Loại lưu trữ nào của Amazon EC2 bị mất toàn bộ dữ liệu khi thể hiện EC2 bị Stop hoặc Terminate?",
+      options: [
+        "Amazon EBS",
+        "Amazon EC2 Instance Store",
+        "Amazon EFS",
+        "Amazon S3"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 60: Công cụ nào giúp ước tính chi phí hàng tháng trước khi thực sự triển khai tài nguyên trên AWS?",
+      options: [
+        "AWS Cost Explorer",
+        "AWS Pricing Calculator",
+        "AWS Budgets",
+        "AWS Billing Dashboard"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 61: Thành phần nào bắt buộc phải có để một Subnet trong VPC có thể giao tiếp trực tiếp với Internet công cộng?",
+      options: [
+        "NAT Gateway",
+        "Internet Gateway (IGW)",
+        "VPC Peering",
+        "Virtual Private Gateway"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 62: Dịch vụ nào lưu trữ mật khẩu, API keys một cách an toàn và hỗ trợ tự động xoay vòng (rotation) mật khẩu?",
+      options: [
+        "AWS Systems Manager Parameter Store",
+        "AWS Secrets Manager",
+        "AWS KMS",
+        "IAM Policies"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 63: Dịch vụ trung tâm cuộc gọi (Cloud Contact Center) dựa trên đám mây của AWS là gì?",
+      options: [
+        "Amazon Chime",
+        "Amazon Connect",
+        "Amazon Pinpoint",
+        "Amazon SES"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 64: Khi vận hành Amazon RDS, AWS sẽ chịu trách nhiệm cho công việc nào sau đây?",
+      options: [
+        "Tối ưu hóa các câu lệnh SQL truy vấn",
+        "Thiết kế cấu trúc bảng cơ sở dữ liệu",
+        "Quản lý bản vá hệ điều hành và sao lưu định kỳ DB",
+        "Tạo tài khoản người dùng ứng dụng"
+      ],
+      correct: [2]
+    },
+    {
+      q: "Câu hỏi 65: Khái niệm 'Fault Tolerance' (Khả năng chịu lỗi) nghĩa là gì?",
+      options: [
+        "Hệ thống tự động tiếp tục hoạt động không gián đoạn khi một thành phần bị lỗi.",
+        "Hệ thống khôi phục dữ liệu từ bản sao lưu trong vòng 24 giờ.",
+        "Hệ thống giảm chi phí vận hành xuống mức thấp nhất.",
+        "Hệ thống tự động cảnh báo qua email khi máy chủ quá tải."
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 66: Để bảo vệ tài khoản AWS khỏi bị truy cập trái phép, thực hành tốt nhất đầu tiên cho tài khoản Root là gì?",
+      options: [
+        "Chia sẻ mật khẩu Root cho đội ngũ quản trị",
+        "Bật xác thực đa yếu tố (MFA) và không dùng tài khoản Root cho công việc hàng ngày",
+        "Xóa tài khoản Root",
+        "Tạo access key công khai cho tài khoản Root"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 67: Dịch vụ giúp di chuyển cơ sở dữ liệu từ On-premises lên AWS với thời gian gián đoạn tối thiểu là gì?",
+      options: [
+        "AWS Application Migration Service",
+        "AWS Database Migration Service (DMS)",
+        "AWS DataSync",
+        "AWS Schema Conversion Tool"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 68: Trong Amazon S3, tính năng nào cho phép giữ lại nhiều phiên bản của cùng một đối tượng để phòng rủi ro bị ghi đè hoặc xóa nhầm?",
+      options: [
+        "S3 Lifecycle Management",
+        "S3 Versioning",
+        "S3 Replication",
+        "S3 Object Lock"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 69: Dịch vụ luồng dữ liệu thời gian thực (Real-time data streaming) trên AWS là gì?",
+      options: [
+        "Amazon Kinesis",
+        "Amazon SQS",
+        "Amazon SNS",
+        "AWS Glue"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 70: Dịch vụ ETL (Extract, Transform, Load) không máy chủ để chuẩn bị dữ liệu cho phân tích là gì?",
+      options: [
+        "AWS DataSync",
+        "AWS Glue",
+        "Amazon EMR",
+        "AWS Step Functions"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 71: Trụ cột nào trong Well-Architected Framework tập trung vào việc chạy và theo dõi các hệ thống để mang lại giá trị kinh doanh?",
+      options: [
+        "Operational Excellence",
+        "Security",
+        "Reliability",
+        "Sustainability"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 72: Dịch vụ nào giúp kết nối hàng nghìn VPC và mạng tại chỗ thông qua một hub trung tâm?",
+      options: [
+        "VPC Peering",
+        "AWS Transit Gateway",
+        "AWS PrivateLink",
+        "AWS Direct Connect"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 73: Gói AWS Support nào KHÔNG cung cấp hỗ trợ kỹ thuật 24/7 qua điện thoại/chat?",
+      options: [
+        "Developer Support",
+        "Business Support",
+        "Enterprise On-Ramp",
+        "Enterprise Support"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 74: Lợi ích chính của việc sử dụng AWS Cloud computing so với On-premises là gì?",
+      options: [
+        "Tăng năng lực dự báo chính xác nhu cầu hạ tầng trong 5 năm tới.",
+        "Thay thế chi phí đầu tư ban đầu bằng chi phí biến đổi và tăng tốc độ đổi mới.",
+        "Toàn quyền sở hữu các thiết bị phần cứng.",
+        "Không cần quan tâm đến vấn đề an toàn thông tin."
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 75: Dịch vụ chuyển đổi ngôn ngữ thành giọng nói tự nhiên (Text-to-Speech) bằng AI của AWS là gì?",
+      options: [
+        "Amazon Transcribe",
+        "Amazon Polly",
+        "Amazon Lex",
+        "Amazon Rekognition"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 76: Dịch vụ nhận diện hình ảnh và phân tích video bằng AI của AWS là gì?",
+      options: [
+        "Amazon Rekognition",
+        "Amazon Comprehend",
+        "Amazon Textract",
+        "Amazon SageMaker"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 77: Nền tảng xây dựng, huấn luyện và triển khai mô hình Machine Learning toàn diện trên AWS là gì?",
+      options: [
+        "Amazon Lex",
+        "Amazon SageMaker",
+        "AWS DeepRacer",
+        "Amazon Kendra"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 78: Dịch vụ giúp tự động đặt cảnh báo khi chi phí sử dụng vượt quá ngân sách dự kiến là dịch vụ nào?",
+      options: [
+        "AWS Cost Explorer",
+        "AWS Budgets",
+        "AWS Pricing Calculator",
+        "AWS License Manager"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 79: Để kết nối an toàn giữa hai VPC riêng biệt trong cùng một hoặc khác Region, bạn sử dụng tính năng nào?",
+      options: [
+        "VPC Peering",
+        "Internet Gateway",
+        "NAT Gateway",
+        "AWS Direct Connect"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 80: Dịch vụ lưu trữ đối tượng giá cực rẻ dùng cho lưu trữ lưu đệm/lưu trữ lâu dài (Archive) với thời gian lấy dữ liệu từ vài giờ đến 12 giờ là gì?",
+      options: [
+        "Amazon S3 Standard-IA",
+        "Amazon S3 Glacier Deep Archive",
+        "Amazon EBS",
+        "Amazon EFS"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 81: Lợi ích nào giúp người dùng triển khai ứng dụng trên toàn thế giới chỉ trong vài phút?",
+      options: [
+        "Economies of scale",
+        "Go global in minutes",
+        "Stop guessing capacity",
+        "Increase speed and agility"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 82: Dịch vụ nào theo dõi tình trạng sức khỏe của các dịch vụ AWS và thông báo nếu có sự cố ảnh hưởng đến tài khoản của bạn?",
+      options: [
+        "AWS Service Health Dashboard",
+        "AWS Personal Health Dashboard (AWS Health Dashboard)",
+        "Amazon CloudWatch",
+        "AWS Trusted Advisor"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 83: Loại EC2 Instance nào phù hợp cho các khối lượng công việc ngắn hạn, có thể bị ngắt quãng nhưng đòi hỏi chi phí tối ưu nhất?",
+      options: [
+        "On-Demand Instances",
+        "Spot Instances",
+        "Reserved Instances",
+        "Dedicated Hosts"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 84: Loại EC2 Instance nào dành riêng một máy chủ vật lý hoàn toàn cho một khách hàng để tuân thủ quy định nghiêm ngặt?",
+      options: [
+        "Dedicated Hosts / Dedicated Instances",
+        "On-Demand Instances",
+        "Spot Instances",
+        "Standard Reserved Instances"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 85: Dịch vụ nào quản lý hệ thống tường lửa tập trung cho tất cả các VPC trong tổ chức AWS?",
+      options: [
+        "AWS Network Firewall",
+        "AWS WAF",
+        "Security Group",
+        "Network ACL"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 86: Để truy vấn dữ liệu trực tiếp trên Amazon S3 bằng ngôn ngữ SQL tiêu chuẩn mà không cần nạp vào DB, bạn dùng dịch vụ nào?",
+      options: [
+        "Amazon Redshift",
+        "Amazon Athena",
+        "Amazon EMR",
+        "Amazon DynamoDB"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 87: Dịch vụ nào giúp đơn giản hóa việc chuyển đổi schema của cơ sở dữ liệu sang định dạng cơ sở dữ liệu khác trên AWS?",
+      options: [
+        "AWS DMS",
+        "AWS Schema Conversion Tool (SCT)",
+        "AWS Application Discovery Service",
+        "AWS Migration Hub"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 88: Dịch vụ kiểm soát chính sách truy cập tập trung và quản lý danh tính người dùng tích hợp với Active Directory là gì?",
+      options: [
+        "AWS IAM Identity Center (AWS Single Sign-On)",
+        "AWS Secrets Manager",
+        "AWS Certificate Manager",
+        "AWS Directory Service"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 89: Trụ cột mới được bổ sung vào AWS Well-Architected Framework gần đây là trụ cột nào?",
+      options: [
+        "Sustainability (Sự bền vững)",
+        "Security",
+        "Reliability",
+        "Cost Optimization"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 90: Thành phần nào chịu trách nhiệm dịch tên miền thành địa chỉ IP trong mô hình mạng?",
+      options: [
+        "DHCP",
+        "DNS (Amazon Route 53)",
+        "NAT",
+        "BGP"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 91: Trong AWS IAM, tập hợp các quyền hạn được định nghĩa dưới dạng tài liệu JSON được gọi là gì?",
+      options: [
+        "IAM Role",
+        "IAM Policy",
+        "IAM Group",
+        "IAM User"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 92: Dịch vụ lưu trữ tệp hoàn toàn được quản lý hỗ trợ giao thức SMB dành cho môi trường Windows trên AWS là gì?",
+      options: [
+        "Amazon EFS",
+        "Amazon FSx for Windows File Server",
+        "Amazon EBS",
+        "Amazon S3"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 93: Dịch vụ giúp đồng bộ hóa dữ liệu giữa hệ thống lưu trữ On-premises và Amazon S3/EFS tự động là gì?",
+      options: [
+        "AWS DataSync",
+        "AWS Snowball",
+        "AWS Storage Gateway",
+        "AWS Direct Connect"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 94: Dịch vụ lai (Hybrid Cloud) cho phép mở rộng hạ tầng AWS trực tiếp vào trung tâm dữ liệu tại chỗ của khách hàng là gì?",
+      options: [
+        "AWS Outposts",
+        "AWS Local Zones",
+        "AWS Wavelength",
+        "AWS Snowball"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 95: Dịch vụ giúp cấu hình quy trình tích hợp và triển khai liên tục (CI/CD) tự động trên AWS là gì?",
+      options: [
+        "AWS CodePipeline",
+        "AWS CodeCommit",
+        "AWS CodeBuild",
+        "AWS CodeDeploy"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 96: Khi tạo một VPC mới, thành phần nào sau đây mặc định sẽ được tự động tạo kèm theo?",
+      options: [
+        "Internet Gateway",
+        "Default Security Group, Main Route Table, Default Network ACL",
+        "NAT Gateway",
+        "VPC Peering Connection"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 97: Dịch vụ nào cung cấp khả năng tìm kiếm nâng cao (Search Engine) cho các tệp và ứng dụng trên AWS?",
+      options: [
+        "Amazon OpenSearch Service (Elasticsearch)",
+        "Amazon Athena",
+        "Amazon Redshift",
+        "Amazon Kendra"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 98: Trong Mô hình Trách nhiệm Chung, việc cập nhật firmware cho các thiết bị mạng vật lý là trách nhiệm của ai?",
+      options: [
+        "Khách hàng",
+        "AWS",
+        "Cả Khách hàng và AWS",
+        "Bên cung cấp dịch vụ Internet (ISP)"
+      ],
+      correct: [1]
+    },
+    {
+      q: "Câu hỏi 99: Dịch vụ nào giúp thu gom, xử lý và phân tích dữ liệu log thời gian thực với quy mô lớn?",
+      options: [
+        "Amazon Kinesis Data Streams / Firehose",
+        "Amazon SQS",
+        "AWS CloudTrail",
+        "AWS Artifact"
+      ],
+      correct: [0]
+    },
+    {
+      q: "Câu hỏi 100: Công cụ dòng lệnh cho phép tương tác và quản lý các dịch vụ AWS bằng câu lệnh là gì?",
+      options: [
+        "AWS Management Console",
+        "AWS Command Line Interface (CLI)",
+        "AWS Software Development Kit (SDK)",
+        "AWS Cloud9"
+      ],
+      correct: [1]
+    }
   ]  
 };
